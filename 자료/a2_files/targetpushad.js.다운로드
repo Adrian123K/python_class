@@ -1,0 +1,217 @@
+/**
+*@desc notice.js => targetpushad.js 변경
+*add load ext 
+*@date 2020.04.23 상품별 스크립트 분기처리 by J
+*@date 2020.04.29 동영상 템플릿 추가 by pd jung
+*@date 2020.05.06 전환파라미터 추가 by pd J
+*/
+if(typeof adtive_targetpush_ad == 'undefined') {
+	var adtive_targetpush_ad = {
+		//매체코드 
+		zcode : '',	
+		//영역코드 
+		mcode : '',
+		cdn_url:'//cdn.targetpush.co.kr',
+		log_url:'//log.targetpush.co.kr',
+		show_num:0,
+		//광고 노출 시작 
+		start : function(mcode, zcode) {
+			var apdcscript = document.createElement('script'); 
+			apdcscript.src = adtive_targetpush_ad.log_url+'/adinfo/getovenjson.php?jsoncallback=jsonp_call';
+			document.getElementsByTagName('head')[0].appendChild(apdcscript);		
+			jsonp_call = function(data) {
+				var denyAD = data.tpdenyAD;		
+				if(denyAD==1) return;
+
+				//동아일보 해상도가 기준치보다 작으면 아예 안보이도록..
+//				if(mcode == 'DB444448'&& (window.innerWidth<1600 || window.innerHeight<600)) return;
+				//경향일보 w상품이 해상도가 기준치보다 작으면 아예 안보이도록..
+				if(mcode == 'M1444448' && zcode == 'YALLLLLF' && window.innerWidth<1600) return;
+
+				//크롬이면 return;
+				var userAgent = window.navigator.userAgent;
+				var isChrome = userAgent.indexOf('Chrome');
+				var isChromeMobile = userAgent.indexOf('CriOS');
+				var isInapp = userAgent.indexOf('inapp');
+				var isSamsung = userAgent.indexOf('SamsungBrowser');
+				var isDaumApps = userAgent.indexOf('DaumApps');
+				var isEdge = userAgent.indexOf('Edge');
+				var isWhale = userAgent.indexOf('Whale');
+				adtive_targetpush_ad.mcode = mcode;
+				adtive_targetpush_ad.zcode = zcode;
+
+				// get JSON with using pure javascript
+				var xhr = new XMLHttpRequest();
+				var paramVal = "paramVal";
+				var cp_type = (adtive_targetpush_ad.isMobile() == true) ? '2': '1';
+				var target = adtive_targetpush_ad.log_url+"/maker.php";//영역정보,캠페인정보 끌어오기
+				xhr.open("GET", target + "?zcode="+zcode+"&mcode="+mcode+"&paramName=" + paramVal+"&cp_type="+cp_type, true);
+				xhr.send();
+				xhr.onreadystatechange = function() {
+					if (xhr.readyState === XMLHttpRequest.DONE) {
+						if (xhr.status == 200 && adtive_targetpush_ad.show_num==0) {
+							var loadedJSON = JSON.parse(xhr.responseText);
+							adtive_targetpush_ad.jdata = loadedJSON;
+							var browser = (adtive_targetpush_ad.isMobile() == true) ? 'm': 'w';
+							var zone = adtive_targetpush_ad.jdata.zone;
+							if(zone.device != browser) return;
+							if(zone.chrome_limit == 'y' && (isChrome > -1 || isChromeMobile > -1) 
+					&& isInapp < 0 && isSamsung < 0 && isDaumApps < 0 && isEdge < 0 && isWhale < 0) return;
+							var script_name= (cp_type == 1) ? 'targetpushad_w' : 'targetpushad_m';
+							if(zone.adpx_code) {
+								var exp_adpx_code = zone.adpx_code.replace(/'/gi, '').split(',');
+								if(!exp_adpx_code[0] || !exp_adpx_code[1]) {
+									console.log('code error');
+									return;
+								}
+								var adpx_mcode=exp_adpx_code[0].replace(/^\s+|\s+$/g,"");
+								var adpx_zcode=exp_adpx_code[1].replace(/^\s+|\s+$/g,"");
+								if(adpx_mcode && adpx_zcode) {
+									//영역생성
+									var zone_html='<div id="_2BEON'+adpx_zcode+'"></div>';
+									document.body.insertAdjacentHTML('beforeend', zone_html);
+									var targetpush_script=adtive_targetpush_ad.script('js',adtive_targetpush_ad.cdn_url+'/js/'+script_name+'.js?ver=202005261834');
+									adtive_targetpush_ad.show_num++;							
+									if(typeof adtiveDrawAD==='undefined'){
+										var adpx_script=adtive_targetpush_ad.script('js','//plugin.adplex.co.kr/script/2beonAdScript.js');
+										adpx_script.onload = function() {
+											adtiveDrawAD(adpx_mcode,adpx_zcode,{jsDoc : function(){
+												adtive_targetpush_pc.start(mcode,zcode);
+											}});
+										}
+									} else {
+										adtiveDrawAD(adpx_mcode,adpx_zcode,{jsDoc : function(){
+											adtive_targetpush_pc.start(mcode,zcode);
+										}});
+									}
+								} else {
+									console.log('code error');
+									return;
+								}
+							} else {
+								var targetpush_script=adtive_targetpush_ad.script('js',adtive_targetpush_ad.cdn_url+'/js/'+script_name+'.js?ver=20205261834');
+								targetpush_script.onload = function() {
+									adtive_targetpush_pc.start(mcode,zcode);
+								}
+							}
+						} else {
+							console.log("fail to load");
+						}
+					}
+				}
+			}
+		},
+		script : function (type, url) {
+			if(type == 'js') {
+				var scriptRef = document.createElement('script'); 
+				scriptRef.setAttribute('src',url);
+				document.head.appendChild(scriptRef); 
+				return scriptRef;
+			}
+		},
+		isMobile : function () {
+			return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('Mobile') !== -1);
+		},
+		getCookie : function(name) {
+			var value = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+			return value ? value[2] : null;
+		}
+	};
+
+
+
+	var adtive_targetpush_ad_noti = {
+		//매체코드 
+		zcode : '',	
+		//영역코드 
+		mcode : '',
+		cdn_url:'//cdn.targetpush.co.kr',
+		log_url:'//log.targetpush.co.kr',
+		show_num:0,
+		mz_type:1,
+		//광고 노출 시작 
+		start : function(mcode, zcode) {
+			//크롬이면 return;
+			var userAgent = window.navigator.userAgent;
+			var isChrome = userAgent.indexOf('Chrome');
+			var isChromeMobile = userAgent.indexOf('CriOS');
+			var isInapp = userAgent.indexOf('inapp');
+			var isSamsung = userAgent.indexOf('SamsungBrowser');
+			var isDaumApps = userAgent.indexOf('DaumApps');
+			var isEdge = userAgent.indexOf('Edge');
+			var isWhale = userAgent.indexOf('Whale');
+
+			adtive_targetpush_ad_noti.mcode = mcode;
+			adtive_targetpush_ad_noti.zcode = zcode;
+
+			// get JSON with using pure javascript
+			var xhr = new XMLHttpRequest();
+			var paramVal = "paramVal";
+			var target = adtive_targetpush_ad_noti.log_url+"/maker.php";//영역정보,캠페인정보 끌어오기
+			xhr.open("GET", target + "?zcode="+zcode+"&mcode="+mcode+"&paramName=" + paramVal+"&cp_type=3", true);
+			xhr.send();
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState === XMLHttpRequest.DONE) {
+					if (xhr.status == 200 && adtive_targetpush_ad_noti.show_num==0) {
+						var loadedJSON = JSON.parse(xhr.responseText);
+						
+						if(loadedJSON.zone.mz_type==3) adtive_targetpush_ad_noti.mz_type=3;
+						
+						adtive_targetpush_ad_noti.jdata = loadedJSON;
+						var browser = (adtive_targetpush_ad_noti.isMobile() == true) ? 'm': 'w';
+						if(adtive_targetpush_ad_noti.jdata.zone.device != browser) return;
+						if(adtive_targetpush_ad_noti.jdata.zone.adpx_code) {
+							var exp_adpx_code = adtive_targetpush_ad_noti.jdata.zone.adpx_code.replace(/'/gi, '').split(',');
+							if(!exp_adpx_code[0] || !exp_adpx_code[1]) {
+								console.log('code error');
+								return;
+							}
+							var adpx_mcode=exp_adpx_code[0].replace(/^\s+|\s+$/g,"");
+							var adpx_zcode=exp_adpx_code[1].replace(/^\s+|\s+$/g,"");
+							if(adpx_mcode && adpx_zcode) {
+								//영역생성
+								var zone_html='<div id="_2BEON'+adpx_zcode+'"></div>';
+								document.body.insertAdjacentHTML('beforeend', zone_html);
+								var targetpush_script=adtive_targetpush_ad_noti.script('js',adtive_targetpush_ad_noti.cdn_url+'/js/targetpushad_n.js?ver=2020522');
+								adtive_targetpush_ad_noti.show_num++;							
+								if(typeof adtiveDrawAD==='undefined'){
+									var adpx_script=adtive_targetpush_ad_noti.script('js','//plugin.adplex.co.kr/script/2beonAdScript.js');
+									adpx_script.onload = function() {
+										adtiveDrawAD(adpx_mcode,adpx_zcode,{jsDoc : function(){
+											adtive_targetpush_noti.start(mcode,zcode);
+										}});
+									}
+								} else {
+									adtiveDrawAD(adpx_mcode,adpx_zcode,{jsDoc : function(){
+										adtive_targetpush_noti.start(mcode,zcode);
+									}});
+								}
+							} else {
+								console.log('code error');
+								return;
+							}
+						} else {
+							var targetpush_script=adtive_targetpush_ad_noti.script('js',adtive_targetpush_ad_noti.cdn_url+'/js/targetpushad_n.js?ver=2020522');
+							targetpush_script.onload = function() {
+								adtive_targetpush_noti.start(mcode,zcode);
+							}
+						}
+					} else {
+						console.log("fail to load");
+					}
+				}
+			}
+		},
+		script : function (type, url) {
+			if(type == 'js') {
+				var scriptRef = document.createElement('script'); 
+				scriptRef.setAttribute('src',url);
+				document.head.appendChild(scriptRef); 
+				return scriptRef;
+			}
+		},
+		isMobile : function () {
+		    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('Mobile') !== -1);
+		}
+	};
+}

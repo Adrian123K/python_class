@@ -1,0 +1,30 @@
+
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="async" type="text/javascript" src="./publishertag.js.다운로드"></script>
+</head><body marginwidth="0" marginheight="0"><div id="criteo_slot_1398535"><iframe id="criteo_slot_1398535_iframe" frameborder="0" allowtransparency="true" hspace="0" marginwidth="0" marginheight="0" scrolling="no" vspace="0" width="200" height="200" src="./saved_resource(39).html"></iframe></div>
+<script>
+    !function(){
+        /* CONFIG CRITEO ZONE ID, SLOT DIV ID, PASSBACK */
+        var criteoZoneId = 1398535;
+        var criteoSlotId = "criteo_slot_1398535";
+        var passback = function () {
+            var width = "200", height = "200";
+            var div = document.getElementById(criteoSlotId);
+            if (div) { var ifr = document.createElement('iframe'); ifr.setAttribute("id", criteoSlotId+"_iframe"), ifr.setAttribute("frameborder","0"), ifr.setAttribute("allowtransparency","true"), ifr.setAttribute("hspace","0"), ifr.setAttribute("marginwidth","0"), ifr.setAttribute("marginheight","0"), ifr.setAttribute("scrolling","no"), ifr.setAttribute("vspace","0"), ifr.setAttribute("width", width), ifr.setAttribute("height", height);
+            div.appendChild(ifr);
+            var htmlcode = "<html><head></head><body><iframe src=\"//adex.ednplus.com/xc/h/Fz55CcjT/passback?r=147472140&xcb=23\" width=\"200\" height=\"200\" frameborder=\"0\" scrolling=\"no\" topmargin=\"0\" leftmargin=\"0\" marginwidth=\"0\" marginheight=\"0\"></iframe></body></html>";
+            var ifrd = ifr.contentWindow.document; ifrd.open(); ifrd.write(htmlcode); ifrd.close(); }
+        }
+ 
+        var CriteoAdUnits = { "placements": [{ "slotid": criteoSlotId, "zoneid": criteoZoneId }]};
+        window.Criteo = window.Criteo || {}; window.Criteo.events = window.Criteo.events || [];
+        var processCdbBid = function() {
+            var bids = Criteo.GetBidsForAdUnit(criteoSlotId);
+            if (bids.length > 0) {
+                var bidFound = bids[0]; Criteo.RenderAd({ bidId: bidFound.id, containerId: bidFound.impressionId });
+            } else { passback(); }
+        };
+        Criteo.events.push(function() { Criteo.RequestBids(CriteoAdUnits, processCdbBid, 2000);});
+    }();
+</script>
+<!-- END CRITEO CDB --></body></html>

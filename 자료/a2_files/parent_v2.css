@@ -1,0 +1,1393 @@
+@charset "utf-8";
+
+/* banner_color */
+.banner_color01 {background:#7b7473;}
+.banner_color02 {background:#899bb3;}
+.banner_color03 {background:#c2ad6c;}
+.banner_color04 {background:#83aeb2;}
+
+/* byline */
+.byline {display:block;color:#ebebeb;font-size:11px;line-height:17px;font-family:Dotum,'돋움',sans-serif;}
+.byline em {color:#b7b7b7;font-family:Tahoma,Dotum,'돋움',sans-serif;*font-family:Dotum,'돋움',sans-serif;}
+.byline em a {color:#b7b7b7;}
+
+/* add */
+.add {position:absolute;top:0;right:0;color:#a9b1b9;font-size:11px;line-height:17px;letter-spacing:-0.02em;}
+.add .icon {display:inline-block;*display:inline;zoom:1;width:4px;height:8px;margin-left:3px;background:url('https://images.joins.com/ui_joongang/news/pc/main/u_add.png') 0 0 no-repeat;vertical-align:middle;overflow:hidden;}
+
+/* icon */
+.icon_jplus {display:block;width:55px;height:22px;background:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_jplus.png') 0 0 no-repeat;overflow:hidden;}
+.icon_jplus a {display:block;width:55px;height:22px;text-indent:-9999px;overflow:hidden;}
+.icon_cover {display:block;width:56px;height:22px;background:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_cover.png') 0 0 no-repeat;overflow:hidden;}
+.icon_cover a {display:block;width:56px;height:22px;text-indent:-9999px;overflow:hidden;}
+.icon_live {display:block;width:41px;height:22px;background:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_live.png') 0 0 no-repeat;overflow:hidden;}
+.icon_live a {display:block;width:41px;height:22px;text-indent:-9999px;overflow:hidden;}
+.icon_piki {display:block;width:59px;height:22px;background:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_piki.png') 0 0 no-repeat;overflow:hidden;}
+.icon_piki a {display:block;width:59px;height:22px;text-indent:-9999px;overflow:hidden;}
+.icon_card {display:block;width:54px;height:22px;background:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_card.png') 0 0 no-repeat;overflow:hidden;}
+.icon_card a {display:block;width:54px;height:22px;text-indent:-9999px;overflow:hidden;}
+.icon_best, .icon_hot, .icon_new {display:inline-block;*display:inline;zoom:1;width:27px;height:8px;margin-top:-4px;background-image:url('https://images.joins.com/ui_joongang/news/pc/main/t_portal_search.png');background-repeat:no-repeat;overflow:hidden;}
+.icon_best {background-position:0 0;}
+.icon_hot {background-position:0 -8px;}
+.icon_new {background-position:0 -16px;}
+
+/* label */
+span[class^="label_"] {display:inline-block;*display:inline;zoom:1;height:22px;background-position:0 0;background-repeat:no-repeat;vertical-align:text-bottom;}
+.label_jplus01 {width:35px;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_jplus01.png');}
+.label_jplus02 {width:35px;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_jplus02.png');}
+.label_jplus03 {width:46px;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_jplus03.png');}
+.label_jplus04 {width:46px;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_jplus04.png');}
+.label_jplus {width:55px;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_jplus.png');}
+.label_onair {width:56px;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_onair.png');}
+.label_live {width:40px;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_live.png');}
+.label_cover {width:56px;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_cover.png');}
+.label_card {width:54px;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_card.png');}
+.label_piki {width:54px;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_piki.png');}
+.label_poll_ing {width:67px;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_poll_ing.png');}
+.label_poll_end {width:57px;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_poll_end.png');}
+.label_best {width:44px;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_best.png');}
+.label_recom {width:35px;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_recom.png');}
+.label_new {width:42px;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_new.png');}
+.label_daily {width:50px;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_daily.png');}
+.label_weekly {width:65px;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_weekly.png');}
+.label_finish {width:35px;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/k_label_finish.png');}
+.label_news {display:inline !important;height:auto !important;vertical-align:baseline !important;}
+
+/* button */
+.btn_follow, .btn_follow button {position:relative;display:inline-block;*display:inline;zoom:1;height:22px;background-image:url('https://images.joins.com/ui_joongang/news/pc/jplus/b_follow.png');background-repeat:no-repeat;background-position:0 0;color:#d6d6d6;font-size:9px;line-height:22px;text-decoration:none !important;vertical-align:top;cursor:pointer;}
+.btn_follow {margin-right:11px;}
+.btn_follow button {left:11px;padding-right:11px;background-position:100% -22px;}
+.btn_follow button strong {color:#a9b1b9;font-weight:normal;font-size:9px;}
+.btn_follow button em {color:#241815;font-size:10px;}
+.btn_follow.toggle_on, .btn_follow.toggle_on button {background-image:url('https://images.joins.com/ui_joongang/news/pc/common/b_follow_subscribe.png');color:#96abd3;}
+.btn_follow.toggle_on button strong {color:#fff;}
+.btn_follow.toggle_on button em {color:#fff;}
+
+/* share */
+.share_wrap {display:inline-block;*display:inline;zoom:1;position:relative;text-align:left;vertical-align:top;}
+.share_wrap .share_button {display:inline-block;*display:inline;zoom:1;width:48px;height:48px;border:1px solid #e4e2e2;overflow:hidden;}
+.share_wrap .share_button .icon {display:block;width:48px;height:48px;background:url('https://images.joins.com/ui_joongang/news/pc/article/i_share_button.png') 0 0 no-repeat;text-indent:-9999px;overflow:hidden;}
+.share_wrap .share_list {position:absolute;top:0;left:49px;width:214px;padding:2px 8px 13px 15px;border:1px solid #cac9c9;background:#fff;font-size:12px;line-height:18px;letter-spacing:-0.02em;-webkit-box-shadow:4px 3px 6px rgba(0,0,0,.15);-moz-box-shadow:4px 3px 6px rgba(0,0,0,.15);box-shadow:4px 3px 6px rgba(0,0,0,.15);}
+.share_wrap .share_list {zoom:1;}
+.share_wrap .share_list:after {content:'.';display:block;font-size:0;height:0px;line-height:0;clear:both;}
+.share_wrap .share_list a {display:block;float:left;position:relative;width:76px;margin-top:11px;padding:3px 0 3px 31px;color:#3c3e40;}
+.share_wrap .share_list a span {display:block;position:absolute;top:0;left:0;width:24px;height:24px;background-image:url('https://images.joins.com/ui_joongang/news/pc/article/i_share.png');background-repeat:no-repeat;line-height:0;text-indent:-9999px;overflow:hidden;}
+.share_wrap .share_list .icon_facebook {background-position:0 0;}
+.share_wrap .share_list .icon_twitter {background-position:-24px 0;}
+.share_wrap .share_list .icon_googleplus {background-position:-48px 0;}
+.share_wrap .share_list .icon_pinterest {background-position:-72px 0;}
+.share_wrap .share_list .icon_kakaostory {background-position:-96px 0;}
+.share_wrap .share_list .icon_instagram {background-position:-120px 0;}
+.share_wrap .share_list .icon_kakaotalk {background-position:-144px 0;}
+.share_wrap .share_list .icon_poketroket {background-position:-168px 0;}
+.share_wrap .share_list .icon_email {background-position:-192px 0;}
+.share_area {display:inline-block;*display:inline;zoom:1;vertical-align:top;}
+.share_area a {display:inline-block;*display:inline;zoom:1;vertical-align:top;cursor:pointer;}
+.share_area a span {display:block;width:16px;height:16px;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/i_share.png');background-repeat:no-repeat;line-height:0;text-indent:-9999px;overflow:hidden;}
+.share_area .icon_facebook {background-position:0 0;}
+.share_area .icon_twitter {background-position:-16px 0;}
+.share_area .icon_googleplus {background-position:-32px 0;}
+.share_area .icon_pinterest {background-position:-48px 0;}
+.share_area .icon_kakaostory {background-position:-64px 0;}
+.share_area .icon_instagram {background-position:-80px 0;}
+.share_area .icon_kakaotalk {background-position:-96px 0;}
+.share_area .icon_poketroket {background-position:-112px 0;}
+.share_area .icon_email {background-position:-128px 0;}
+.share_area .icon_comment {background-position:-144px 0;}
+.share_area .icon_blog {background-position:-176px 0;}
+.share_area a:hover .icon_facebook {background-position:0 -16px;}
+.share_area a:hover .icon_twitter {background-position:-16px -16px;}
+.share_area a:hover .icon_googleplus {background-position:-32px -16px;}
+.share_area a:hover .icon_pinterest {background-position:-48px -16px;}
+.share_area a:hover .icon_kakaostory {background-position:-64px -16px;}
+.share_area a:hover .icon_instagram {background-position:-80px -16px;}
+.share_area a:hover .icon_kakaotalk {background-position:-96px -16px;}
+.share_area a:hover .icon_poketroket {background-position:-112px -16px;}
+.share_area a:hover .icon_email {background-position:-128px -16px;}
+.share_area a:hover .icon_comment {background-position:-144px -16px;}
+.share_area a:hover .icon_blog {background-position:-176px -16px;}
+
+/* OVP_Player */
+.ovp_player {clear:both;position:relative;}
+.ovp_player .player_area {position:relative;}
+.ovp_player .btn_ovpplay {position:absolute;top:0;left:0;width:100%;height:100%;}
+.ovp_player .btn_ovpplay span {overflow:hidden;position:absolute;top:50%;left:50%;width:88px;height:88px;margin:-44px 0 0 -44px;line-height:500px;background:url('https://images.joins.com/ui_joongang/news/common/i_ovp_play.png') no-repeat 0 0;}
+/* only ie8 */
+@media \0screen {
+	.ovp_player .btn_ovpplay span{top:0;}
+}
+.ovp_player16-9 {}
+.ovp_player9-16 {}
+.ovp_player1-1 {}
+.ovp_player iframe,.ovp_player embed,.ovp_player object,.ovp_player video {vertical-align:top;}
+
+.ovp_recommend {background-color:#fff;}
+.ovp_recommend .hd {overflow:visible;position:relative;height:49px;line-height:49px;padding:0;text-align:left;border-bottom:1px solid #d6d6d6;font-size:15px;font-weight:bold;}
+.ovp_recommend .tit {position:absolute;top:-11px;left:0;padding-right:19px;line-height:1.3;background-color:#fff;color:#5d81c3;}
+.ovp_recommend .txt {display:block;}
+.ovp_recommend .txt a {overflow:hidden;position:relative;display:inline-block;max-width:86%;padding-right:25px;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;color:#231f20;}
+.ovp_recommend .txt a:after {content:" ";position:absolute;top:23px;right:0;display:block;width:20px;height:20px;background:url("https://images.joins.com/ui_joongang/news/pc/common/i_video.gif") no-repeat 0 0;}
+.ovp_recommend .btn_more {position:absolute;top:0;right:0;width:auto;height:49px;font:bold 15px "Apple SD Gothic Neo","Malgun Gothic","맑은 고딕","Noto Sans",Dotum,"돋움",sans-serif;color:#2a5ab3;}
+.ovp_recommend .btn_more span {padding-right:26px;background:url("https://images.joins.com/ui_joongang/news/common/u_ovp_arrow_v2.png") no-repeat 100% -18px;}
+.ovp_recommend .bd {display:none;position:relative;padding:4px 29px 15px;background-color:#fff;*zoom:1;}
+.ovp_recommend .bd ul {margin-left:-42px;}
+.ovp_recommend .bd li {float:left;width:146px;margin-left:42px;}
+.ovp_recommend .bd .thumb {overflow:hidden;position:relative;display:block;height:82px;margin:0 auto 5px;}
+.ovp_recommend .bd .thumb img {width:100%;height:100%;}
+.ovp_recommend .bd .text_area {overflow:hidden;display:block;max-height:36px;margin:0 auto;}
+.ovp_recommend .bd .headline a {display:block;text-align:left;font:normal 12px/18px "돋움",Dotum;color:#3c3e40;}
+.ovp_recommend .btn-prev,.ovp_recommend .btn-next {position:absolute;top:4px;display:block;width:29px;height:82px;z-index:3;}
+.ovp_recommend .btn-prev span,.ovp_recommend .btn-next span {position:absolute;top:50%;display:block;width:9px;height:17px;margin-top:-9px;background:url("https://images.joins.com/ui_joongang/news/common/u_ovp_arrow_v2.png") no-repeat 0 0;text-indent:-9999px;}
+.ovp_recommend .btn-prev {left:0;}
+.ovp_recommend .btn-next {right:0;}
+.ovp_recommend .btn-prev span {left:0;background-position:100% -42px;}
+.ovp_recommend .btn-next span {right:0;background-position:100% -63px;}
+.ovp_recommend .icon_video {bottom:0;right:0;width:26px;height:26px;background:url("https://images.joins.com/ui_joongang/news/pc/main/i_video_small.png") no-repeat 0 0;}
+.ovp_recommend.open .hd {border-bottom:0 none;}
+.ovp_recommend.open .bd {display:block;border-bottom:1px solid #d6d6d6;}
+.ovp_recommend.open .btn_more span {background-position:100% 8px;}
+.ovp_player1-1 .ovp_recommend {width:435px;margin:0 auto;}
+.ovp_player1-1 .ovp_recommend .bd {padding:4px 51px 15px;}
+.ovp_player1-1 .ovp_recommend .bd ul {margin-left:-49px;}
+.ovp_player1-1 .ovp_recommend .bd li {margin-left:45px;}
+
+/* title_area */
+.title_area {position:relative;z-index:2;margin-top:-12px;padding:1px 0 3px;}
+.title_area .subtitle {float:left;margin-top:0 !important;color:#221815;font-weight:bold;font-size:21px;line-height:33px;letter-spacing:-0.07em;}
+.title_area .setting {float:left;position:relative;margin:12px 0 0 17px;}
+.title_area .setting input.checkbox {position:absolute;top:0;left:0;width:13px;height:13px;opacity:0;-ms-filter:alpha(opacity=0);filter:alpha(opacity=0);}
+.title_area .setting label {margin-left:27px;color:#606060;font-weight:bold;font-size:12px;line-height:18px;letter-spacing:-0.02em;cursor:pointer;}
+.title_area .setting label .icon {display:block;position:absolute;top:3px;left:0;width:23px;height:14px;margin-right:5px;background:url('https://images.joins.com/ui_joongang/news/pc/list/k_title_setting_off.png') 0 0 no-repeat;vertical-align:middle;}
+.title_area .setting input.checkbox.checked +  label .icon {background:url('https://images.joins.com/ui_joongang/news/pc/list/k_title_setting_on.png') 0 0 no-repeat;}
+.title_selecbox .selecbox {float:right;width:160px;height:25px;line-height:25px;margin-top:7px;border:1px solid #d7d7d7;background:none;}
+.title_selecbox .selecbox .btnbox {width:100%;text-align:center;}
+.title_selecbox .selecbox .btnbox a {display:inline;padding:0 12px 0 0;font-size:12px;letter-spacing:0;background:url('https://images.joins.com/ui_joongang/news/pc/common/u_downarrow_s.png') right center no-repeat;}
+.title_selecbox .selecbox ul {overflow:visible;position:relative;top:0;left:-1px;width:100%;height:auto;border:1px solid #d7d7d7;background:#fff;z-index:2;}
+.title_selecbox .selecbox li {height:25px;line-height:25px;text-align:center;}
+.title_selecbox .selecbox .btnbox a,.title_selecbox .selecbox li a {color:#231815;}
+.paging_date {float:right;margin-top:11px;}
+.paging_date .date_wrap {float:left;position:relative;padding:0 31px;text-align:center;}
+.paging_date .date_wrap em {color:#3c3e40;font-weight:bold;font-size:13px;line-height:20px;letter-spacing:-0.02em;}
+.paging_date .date_wrap .btn_prev, .paging_date .date_wrap .btn_next {display:block;position:absolute;top:50%;width:15px;height:11px;margin-top:-5px;text-indent:-9999px;overflow:hidden;}
+.paging_date .date_wrap .btn_prev {left:0;background:url('https://images.joins.com/ui_joongang/news/pc/list/b_prev_title_date.png') 50% 0 no-repeat;}
+.paging_date .date_wrap .btn_next {right:0;background:url('https://images.joins.com/ui_joongang/news/pc/list/b_next_title_date.png') 50% 0 no-repeat;}
+.paging_date .set_calendar {float:left;position:relative;margin:3px 0 0 7px;}
+.paging_date .set_calendar > a.btn_calendar {display:block;width:18px;height:15px;padding-bottom:5px;background:url('https://images.joins.com/ui_joongang/news/pc/list/i_set_calendar.png') 0 0 no-repeat;text-indent:-9999px;overflow:hidden;}
+.paging_date .set_calendar > a.btn_calendar.toggle_on {background:url('https://images.joins.com/ui_joongang/news/pc/list/i_set_calendar_on.png') 0 0 no-repeat;}
+.paging_date .layer_calendar {position:absolute;top:100%;right:0;width:219px;padding-bottom:5px;border:1px solid #cac9c9;background:#fff;-webkit-box-shadow:4px 3px 6px rgba(0,0,0,.15);-moz-box-shadow:4px 3px 6px rgba(0,0,0,.15);box-shadow:4px 3px 6px rgba(0,0,0,.15);}
+.layer_calendar .date_wrap {float:none;position:relative;height:25px;padding:4px 35px 0;background:#f6f6f6;text-align:center;}
+.layer_calendar .date_wrap em {font-weight:bold;}
+.layer_calendar .date_wrap .btn_prev {left:15px;}
+.layer_calendar .date_wrap .btn_next {right:15px;}
+.layer_calendar table {width:189px;margin:5px auto 0;border-collapse:collapse;}
+.layer_calendar table th, .layer_calendar table td {color:#a9b1b9;font-size:12px;line-height:18px;text-align:center;}
+.layer_calendar table th {padding-bottom:5px;font-weight:normal;vertical-align:top;}
+.layer_calendar table th span {display:block;padding-bottom:6px;border-bottom:1px solid #ebebeb;}
+.layer_calendar table td {padding:4px 0 3px;font-weight:bold;}
+.layer_calendar table td a {color:#3c3e40;}
+.layer_calendar table td.weekend a {color:#f33d33;}
+.layer_calendar table td.today {background:#e7e4da;}
+.paging_date .set_all {float:left;position:relative;margin:3px 0 0 4px;}
+.paging_date .set_all > a.btn_all {display:block;width:23px;height:15px;padding-bottom:5px;background:url('https://images.joins.com/ui_joongang/news/pc/list/i_set_all.png') 0 0 no-repeat;text-indent:-9999px;overflow:hidden;}
+.paging_date .set_all > a.btn_all.toggle_on {background:url('https://images.joins.com/ui_joongang/news/pc/list/i_set_all_on.png') 0 0 no-repeat;}
+
+/* ui-datepicker */
+.ui-datepicker, .ui-datepicker th, .ui-datepicker td {font-family:'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','Noto Sans',Dotum,'돋움',sans-serif !important;}
+.ui-datepicker {width:219px !important;padding:0 0 8px !important;border:1px solid #cac9c9 !important;border-radius:0 !important;background:#fff !important;-webkit-box-shadow:4px 3px 6px rgba(0,0,0,.15);-moz-box-shadow:4px 3px 6px rgba(0,0,0,.15);box-shadow:4px 3px 6px rgba(0,0,0,.15);}
+.ui-datepicker-header {padding:5px 0 !important;border:none !important;border-radius:0 !important;background:#f6f6f6 !important;}
+.ui-datepicker-header a {top:0 !important;width:29px !important;height:29px !important;border:none !important;}
+.ui-datepicker-header a:hover {background:none !important;}
+.ui-datepicker-header span {position:relative !important;top:auto !important;left:auto !important;width:29px !important;height:29px !important;border:none !important;margin:0 !important;}
+.ui-datepicker-prev {left:15px !important;}
+.ui-datepicker-prev span {background:url('https://images.joins.com/ui_joongang/news/pc/list/b_prev_title_date.png') 50% 50% no-repeat !important;}
+.ui-datepicker-next {right:15px !important;}
+.ui-datepicker-next span {background:url('https://images.joins.com/ui_joongang/news/pc/list/b_next_title_date.png') 50% 50% no-repeat !important;}
+.ui-datepicker-title {color:#3c3e40 !important;font-size:13px !important;line-height:19px !important;}
+.ui-datepicker table {width:189px !important;margin:0 15px !important;font-size:12px !important;line-height:18px !important;}
+.ui-datepicker th {padding:5px 0 8px !important;color:#a9b1b9 !important;font-weight:normal !important;}
+.ui-datepicker th span {display:block;padding-bottom:6px;border-bottom:1px solid #ebebeb;}
+.ui-datepicker td a, .ui-datepicker td span {padding:2px 0 1px !important;border:none !important;background:none !important;font-weight:bold !important;text-align:center !important;}
+.ui-datepicker td a {color:#3c3e40 !important;}
+.ui-datepicker td span {color:#a9b1b9 !important;}
+.ui-datepicker td.ui-datepicker-today {background:#e7e4da !important;}
+.ui-datepicker td.ui-datepicker-week-end:first-child a {color:#f33d33 !important;}
+.ui-datepicker td.ui-state-disabled {background-color:white !important;opacity:1 !important;-ms-filter:"progid:DXImageTransform.Microsoft.Chroma(color='white') progid:DXImageTransform.Microsoft.Alpha(opacity=100)" !important;filter:progid:DXImageTransform.Microsoft.Chroma(color='white') progid:DXImageTransform.Microsoft.Alpha(opacity=100) !important;}
+
+/* subtit */
+.subtit {float:left;margin-left:5px;color:#ebebeb;font-size:11px;line-height:17px;font-family:Dotum,'돋움',sans-serif;}
+.subtit strong {font-weight:normal;color:#a9b1b9;}
+.subtit .icon {display:inline-block;*display:inline;zoom:1;width:4px;height:8px;margin:-1px 0 1px 4px;background:url('https://images.joins.com/ui_joongang/news/pc/search/u_more_search_title.png') 0 0 no-repeat;vertical-align:middle;overflow:hidden;}
+
+/* type_wrap */
+.type_wrap {position:absolute;top:0;right:0;padding-right:5px;}
+.type_wrap a, .type_wrap em {display:inline-block;zoom:1;*display:inline;margin-right:-5px;padding:6px 8px;background:#fff;text-decoration:none;vertical-align:top;overflow:hidden;}
+.type_wrap a {border:1px solid #d6d6d6;cursor:pointer;}
+.type_wrap em {position:relative;z-index:2;border:1px solid #3c3e40;}
+.type_wrap span {display:block;width:12px;height:12px;background-image:url('https://images.joins.com/ui_joongang/news/pc/search/i_type_wrap.png');background-repeat:no-repeat;text-indent:-9999px;overflow:hidden;}
+.type_wrap a .icon_list {background-position:0 0;}
+.type_wrap em .icon_list {background-position:0 -12px;}
+.type_wrap a .icon_image {background-position:-12px 0;}
+.type_wrap em .icon_image {background-position:-12px -12px;}
+
+/* cate */
+.cate_comm {position:relative;height:38px;margin:10px 0;border:1px solid #ebebeb;background:#f6f6f6;}
+.cate_comm ul {position:absolute;top:0;left:0;width:100%;}
+.cate_comm ul {zoom:1;}
+.cate_comm ul:after {content:".";display:block;font-size:0;height:0px;line-height:0;clear:both;}
+.cate_comm li {float:left;}
+.cate_comm li a {display:block;padding:9px 0 11px;color:#231f20;font-weight:bold;font-size:13px;line-height:19px;letter-spacing:-0.02em;text-align:center;}
+.cate_comm li.on a {background:#fff;color:#5d81c3;}
+.cate_comm .col02 li {width:50%;}
+.cate_comm .col02 li:first-child {}
+.cate_comm .col03 li {width:33%;*width:212px;}
+.cate_comm .col03 li:first-child {width:34%;*width:214px;}
+.cate_comm .col05 li {width:20%;*width:127px;}
+.cate_comm .col05 li:first-child {width:20%;*width:130px;}
+.cate_comm .col06 li {width:16.666%;*width:106px;}
+.cate_comm .col06 li:first-child {width:16.666%;*width:108px;}
+
+/* tab */
+.tab_comm {position:absolute;top:0;right:0;height:29px;border:1px solid #ebebeb;background:#fafafa;}
+.tab_comm li {float:left;}
+.tab_comm li a {display:block;position:relative;min-width:56px;height:19px;padding:5px 10px 6px;color:#231f20;font-size:13px;line-height:19px;letter-spacing:-0.02em;text-align:center;}
+.tab_comm li.on a {z-index:2;margin:-1px -1px 0;border:1px solid #d6d6d6;border-bottom:none;background:#fff;font-weight:bold;}
+
+/* paging_comm */
+.paging_comm {margin:40px auto 0;width:100%;text-align:center;zoom:1;}
+.paging_comm .link_page {display:inline-block;zoom:1;*display:inline;width:36px;height:17px;margin:0 -2px 0 -3px;padding:6px 0;border:1px solid #d6d6d6;background:#fff;color:#737475;font-weight:normal;font-size:11px;line-height:17px;font-family:Verdana;text-decoration:none;vertical-align:top;}
+.paging_comm em.link_page {position:relative;z-index:2;border:1px solid #757575;font-weight:bold;color:#fff;background:#757575;}
+.paging_comm .btn_prev, .paging_comm .btn_next {display:inline-block;zoom:1;*display:inline;border:1px solid #d6d6d6;text-decoration:none;vertical-align:top;overflow:hidden;}
+.paging_comm .btn_prev {margin-right:8px;padding:11px 15px 11px 16px;}
+.paging_comm .btn_next {margin-left:7px;padding:11px 16px 11px 15px;}
+.paging_comm .icon {display:block;width:5px;height:7px;text-indent:-9999px;overflow:hidden;}
+.paging_comm .btn_prev .icon {background:url('https://images.joins.com/ui_joongang/news/pc/list/b_prev_paging.png') 0 0 no-repeat;}
+.paging_comm .btn_next .icon {background:url('https://images.joins.com/ui_joongang/news/pc/list/b_next_paging.png') 0 0 no-repeat;}
+
+/* more */
+.more_comm {display:block;margin-top:40px;}
+.more_comm a {display:block;padding:12px 0 12px;border:1px solid #e5e5e5;color:#221815;font-weight:bold;font-size:13px;line-height:19px;letter-spacing:-0.02em;text-align:center;}
+.more_comm em {color:#f33d33;font-weight:bold;}
+.more_comm .icon {display:inline-block;*display:inline;zoom:1;width:10px;height:5px;background:url('https://images.joins.com/ui_joongang/news/pc/common/u_more_comm.png') 0 0 no-repeat;vertical-align:middle;}
+
+/* layer */
+.layer_popup {display:none;border:1px solid #cac9c9;background-color:#fff;-webkit-box-shadow:4px 3px 6px rgba(0,0,0,.15);-moz-box-shadow:4px 3px 6px rgba(0,0,0,.15);box-shadow:4px 3px 6px rgba(0,0,0,.15);}
+.layer_popup .layer_title, .layer_popup .layer_inner, .layer_popup .layer_button {padding-right:25px;padding-left:25px;text-align:center;}
+.layer_popup .layer_title {padding-top:24px;padding-bottom:15px;color:#3c3e40;font-weight:bold;font-size:16px;line-height:24px;letter-spacing:-0.02em;}
+.layer_popup .layer_title .icon {display:block;width:11px;height:1px;margin:12px auto 0;background:#a9b1b9;overflow:hidden;}
+.layer_popup .layer_button {padding-top:30px;padding-bottom:30px;}
+.layer_popup .layer_button button {margin-left:-5px;*margin-left:-1px;height:30px;padding:0 11px;border:1px solid #d6d6d6;color:#3c3e40;font-weight:bold;font-size:13px;*overflow:visible;}
+.layer_popup .layer_button .btn_confirm {position:relative;border:1px solid #e9aa00;}
+
+/* photo_viewer */
+.viewer_overlay {position:fixed;z-index:9999;top:0;left:0;width:100%;height:100%;}
+.photo_viewer .viewer_overlay {background:#000;}
+.image_viewer .viewer_overlay {background:#fff;}
+.viewer_wrap {position:fixed;z-index:10000;top:0;left:0;width:100%;height:100%;text-align:center;}
+.viewer_wrap .ft button {display:block;position:absolute;z-index:10002;top:0;right:0;width:120px;height:120px;background:url('https://images.joins.com/ui_joongang/news/pc/common/b_close_photo_viewer.png') 0 0 no-repeat;color:#fff;text-indent:-9999px;cursor:pointer;}
+.photo_viewer .ft button {background:url('https://images.joins.com/ui_joongang/news/pc/common/b_close_photo_viewer.png') 100% 0 no-repeat;}
+.photo_viewer .ft button:hover {background:url('https://images.joins.com/ui_joongang/news/pc/common/b_close_photo_viewer_over.png') 100% 0 no-repeat;}
+.image_viewer .ft button {background:url('https://images.joins.com/ui_joongang/news/pc/common/b_close_image_viewer.png') 100% 0 no-repeat;}
+.image_viewer .ft button:hover {background:url('https://images.joins.com/ui_joongang/news/pc/common/b_close_image_viewer_over.png') 100% 0 no-repeat;}
+.viewer_wrap .viewer_nav {position:absolute;top:40px;right:0;bottom:40px;left:0;}
+.viewer_wrap .viewer_nav button {display:block;position:absolute;z-index:10001;width:50%;height:100%;top:0;text-indent:-9999px;cursor:pointer;}
+.viewer_wrap .viewer_nav button.btn-prev {left:0;}
+.viewer_wrap .viewer_nav button.btn-next {right:0;}
+.photo_viewer .viewer_nav button.btn-prev {background:url('https://images.joins.com/ui_joongang/news/pc/common/b_prev_photo_viewer.png') 0 50% no-repeat;}
+.photo_viewer .viewer_nav button.btn-prev:hover {background:url('https://images.joins.com/ui_joongang/news/pc/common/b_prev_photo_viewer_over.png') 0 50% no-repeat;}
+.photo_viewer .viewer_nav button.btn-next {background:url('https://images.joins.com/ui_joongang/news/pc/common/b_next_photo_viewer.png') 100% 50% no-repeat;}
+.photo_viewer .viewer_nav button.btn-next:hover {background:url('https://images.joins.com/ui_joongang/news/pc/common/b_next_photo_viewer_over.png') 100% 50% no-repeat;}
+.image_viewer .viewer_nav button.btn-prev {background:url('https://images.joins.com/ui_joongang/news/pc/common/b_prev_image_viewer.png') 0 50% no-repeat;}
+.image_viewer .viewer_nav button.btn-prev:hover {background:url('https://images.joins.com/ui_joongang/news/pc/common/b_prev_image_viewer_over.png') 0 50% no-repeat;}
+.image_viewer .viewer_nav button.btn-next {background:url('https://images.joins.com/ui_joongang/news/pc/common/b_next_image_viewer.png') 100% 50% no-repeat;}
+.image_viewer .viewer_nav button.btn-next:hover {background:url('https://images.joins.com/ui_joongang/news/pc/common/b_next_image_viewer_over.png') 100% 50% no-repeat;}
+.viewer_wrap .viewer_nav .info {display:block;position:absolute;z-index:10002;font-weight:bold;color:#959494;font-size:15px;line-height:22px;letter-spacing:-0.02em;}
+.viewer_wrap .viewer_nav .info em {font-weight:bold;color:#52a8f9;}
+.photo_viewer .viewer_nav .info {bottom:-24px;right:71px;}
+.image_viewer .viewer_nav .info {bottom:17px !important;right:40px !important;}
+.viewer_wrap .viewer_desc {position:absolute;bottom:0px;left:0px;right:0px;text-align:center;}
+.viewer_wrap .desc_overlay {display:block;position:absolute;z-index:10002;top:0;left:0;width:100%;height:100%;}
+.photo_viewer .desc_overlay {background:#000;opacity:.70;-ms-filter:alpha(opacity=70);filter:alpha(opacity=70);}
+.image_viewer .desc_overlay {background:#fff;opacity:.70;-ms-filter:alpha(opacity=70);filter:alpha(opacity=70);}
+.viewer_wrap .desc_wrap {display:block;position:relative;z-index:10002;padding:16px 150px;}
+.viewer_wrap .desc_wrap strong {display:inline-block;*display:inline;zoom:1;font-weight:bold;letter-spacing:-0.04em;vertical-align:middle;} /* display:block;text-overflow:ellipsis;white-space:nowrap;overflow:hidden; */
+.photo_viewer .desc_wrap strong {max-width:90%;color:#fff;font-size:16px;line-height:24px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;word-break:normal;word-wrap:normal;}
+.photo_viewer .desc_wrap strong a {color:#fff;}
+.image_viewer .desc_wrap strong {max-height:104px;color:#3c3e40;font-size:15px;line-height:26px;text-align:left;overflow:hidden;}
+.image_viewer .desc_wrap strong a {color:#3c3e40;}
+.viewer_wrap .desc_wrap em {display:inline-block;*display:inline;zoom:1;margin-left:5px;color:#fff;font-weight:bold;font-size:13px;line-height:19px;letter-spacing:-0.02em;vertical-align:middle;opacity:.5;-ms-filter:alpha(opacity=50);filter:alpha(opacity=50);}
+.viewer_wrap .desc_wrap em a {color:#fff;}
+.viewer_wrap .share_wrap {display:block;position:absolute;z-index:10002;bottom:0;right:21px;line-height:0;}
+.viewer_wrap .share_wrap .share_button {border:1px solid transparent;}
+.viewer_wrap .share_wrap .share_button .icon {background:url('https://images.joins.com/ui_joongang/news/pc/common/b_share_photo_viewer.png') 0 0 no-repeat;}
+.viewer_wrap .share_wrap .share_list {top:auto;right:0;bottom:50px;left:auto;border:1px solid #3c3e40;background:#3c3e40;}
+.viewer_wrap .share_wrap .share_list a {color:#959494;}
+.viewer_wrap .bd {position:absolute;top:0;right:0;bottom:0;left:0;padding:40px 120px;}
+.viewer_wrap .viewer_view {min-width:760px;min-height:550px;}
+.viewer_wrap .ad_wrap {position:absolute;z-index:10002;top:50%;left:50%;width:300px;height:250px;margin:-125px 0 0 -150px;}
+.viewer_wrap .list_wrap {position:absolute;z-index:10002;top:50%;left:50%;width:760px;height:550px;margin:-275px 0 0 -380px;}
+.viewer_wrap .list_wrap dl {margin-bottom:17px;padding-bottom:18px;border-bottom:1px solid #292929;}
+.viewer_wrap .list_wrap dt {position:relative;float:right;width:380px;height:240px;}
+.viewer_wrap .list_wrap dt strong {position:absolute;bottom:0;left:0;font-weight:bold;font-size:22px;line-height:30px;text-align:left;}
+.viewer_wrap .list_wrap dt strong a {color:#fff;}
+.viewer_wrap .list_wrap dd {position:relative;float:left;width:360px;height:240px;}
+.viewer_wrap .list_wrap dd .thumb {display:block;width:360px;height:240px;overflow:hidden;}
+.viewer_wrap .list_wrap dd .thumb img {width:360px;height:240px;}
+.viewer_wrap .list_wrap ul {float:left;width:420px;margin:0 0 0 -10px;}
+.viewer_wrap .list_wrap ul li {float:left;width:130px;height:147px;margin:0 0 0 10px;}
+.viewer_wrap .list_wrap ul .thumb {display:block;width:130px;height:86px;overflow:hidden;}
+.viewer_wrap .list_wrap ul .thumb img {width:130px;height:86px;}
+.viewer_wrap .list_wrap ul strong {display:block;height:36px;margin-top:7px;font-weight:normal;font-size:12px;line-height:18px;text-align:left;}
+.viewer_wrap .list_wrap ul strong a {color:#fff;opacity:.70;-ms-filter:alpha(opacity=70);filter:alpha(opacity=70);}
+.viewer_wrap .list_wrap .ad {float:right;width:300px;}
+.btn_viewer {display:block;position:absolute;bottom:10px;right:10px;padding:6px 17px 6px 40px;background:#252525;color:#efc554;font-weight:bold;font-size:16px;line-height:24px;}
+.btn_viewer .icon {display:block;position:absolute;top:50%;left:17px;width:16px;height:14px;margin-top:-7px;background:url('https://images.joins.com/ui_joongang/news/pc/common/i_viewer_photo_viewer.png') 0 0 no-repeat;vertical-align:middle;}
+.viewer_wrap .logo {display:block;position:absolute;z-index:10002;top:9px;left:120px;width:92px;height:23px;background:url('https://images.joins.com/ui_joongang/news/pc/common/logo_viewer_photo_viewer.png') 0 0 no-repeat;overflow:hidden;}
+.viewer_wrap .logo a {display:block;width:92px;height:23px;text-indent:-9999px;overflow:hidden;}
+
+/* list_basic */
+.list_basic {position:relative;padding-top:20px;overflow:hidden;}
+.list_basic li {zoom:1;}
+.list_basic li:after {content:'.';display:block;font-size:0;height:0px;line-height:0;clear:both;}
+.list_basic a {cursor:pointer;}
+.list_basic .thumb {display:block;}
+.list_basic .headline {display:block;color:#231F20;font-weight:bold;letter-spacing:-0.07em;overflow:hidden;}
+.list_basic .headline a {color:#231F20;}
+.list_basic .lead {display:block;color:#737475;letter-spacing:-0.02em;overflow:hidden;}
+.list_basic .lead a {color:#737475;}
+.list_basic .byline {display:block;}
+.list_basic .type_a {width:702px;margin:0 -31px -1px -30px;border-top:1px solid #e5e5e5;overflow:hidden;}
+.list_basic .type_a li {float:left;position:relative;width:350px;height:310px;padding-top:30px;border-right:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;}
+.list_basic .type_a .thumb, .list_basic .type_a .headline, .list_basic .type_a .lead, .list_basic .type_a .byline, .list_basic .type_a .tag {margin:0 30px 0 30px;}
+.list_basic .type_a .thumb {position:relative;width:290px;height:180px;margin-bottom:13px;overflow:hidden;}
+.list_basic .type_a .thumb img {width:290px;height:180px;}
+.list_basic .type_a .headline {max-height:64px;margin-top:-9px;font-weight:bold;font-size:23px;line-height:32px;}
+.list_basic .type_a .thumb + .headline {max-height:56px;margin-top:0;font-weight:bold;font-size:19px;line-height:28px;}
+.list_basic .type_a .headline span[class^="label_"] {position:absolute;bottom:34px;right:30px;}
+.list_basic .type_a .lead {max-height:96px;padding-top:12px;font-size:12px;line-height:24px;}
+.list_basic .type_a .lead a {color:#a9b1b9;}
+.list_basic .type_a .byline {position:absolute;bottom:31px;left:0;}
+.list_basic .type_a .byline em {color:#a9b1b9;}
+.list_basic .type_a.col3 .thumb, .list_basic .type_a.col3 .headline, .list_basic .type_a.col3 .lead, .list_basic .type_a.col3 .byline, .list_basic .type_a.col3 .tag {margin:0 27px 0 27px;}
+.list_basic .type_a.col3 {width:auto;margin:-50px -28px -1px -27px;border-top:0 none;}
+.list_basic .type_a.col3 li {width:344px;}
+.list_basic .type_a.col3 .thumb {margin-bottom:13px;}
+.list_basic .type_a .headline img{display:none;}
+.list_basic .type_b {margin-top:-20px;}
+.list_basic .type_b li {position:relative;padding:16px 0 19px;border-bottom:1px solid #f6f6f6;}
+.list_basic .type_b .thumb {float:left;position:relative;width:180px;height:120px;margin:4px 20px 1px 0;background:#fff;text-align:center;overflow:hidden;}
+.list_basic .type_b .thumb img {max-width:100%;min-height:120px;}
+.list_basic .type_b .headline {max-height:56px;font-size:17px;line-height:24px;}
+.list_basic .type_b .thumb + .headline span[class^="label_"] {position:absolute;top:20px;left:0;}
+.list_basic .type_b .lead {max-height:36px;padding-top:9px;font-size:12px;line-height:18px;}
+.list_basic .type_b .lead a {color:#737475;}
+.list_basic .type_b .byline {margin-top:3px;}
+.list_image {width:640px;margin:0;padding-top:4px;font-size:0;letter-spacing:-5px;overflow:hidden;}
+.list_image ul {margin-left:-2px;}
+.list_image li {display:inline-block;position:relative;width:212px;margin:16px 0 0 2px;color:#fff;font-size:12px;letter-spacing:0;line-height:1.5;vertical-align:top;*display:inline;zoom:1}
+.list_image a {cursor:pointer;}
+.list_image .thumb {display:block;position:relative;width:212px;height:140px;overflow:hidden;}
+.list_image .thumb img {width:212px;height:140px;}
+.list_image .headline {display:block;max-height:36px;margin:9px 20px 0 0;font-weight:normal;font-size:12px;line-height:18px;letter-spacing:-0.02em;overflow:hidden;}
+.list_image .headline a {color:#221815;}
+.list_image span[class^="label_"] {position:absolute;top:0;left:0;}
+.list_image .byline {display:block;}
+.list_image .more_comm {margin-top:36px;}
+
+.list_none {padding:105px 0;color:#3c3e40;font-size:13px;line-height:18px;text-align:center;}
+
+.dg_tit {height:160px;margin:-40px -40px 40px -40px;padding:0;background:url('https://images.joins.com/ui_joongang/news/pc/list/v_digital_bg.png') no-repeat 0 0;}
+.dg_tit .subtitle {margin-left:40px;line-height:160px;font-size:36px;color:#fff;}
+.dg_tit ~ div.paging_comm {margin:40px auto 40px;}
+.digital_ssulzun_wrap {position:relative;margin-bottom:40px;}
+.digital_ssulzun_wrap .add {top:29px;}
+.list_poll {margin-top:20px;border-top:1px solid #ebebeb;}
+.list_poll li {position:relative;padding-top:23px;padding-bottom:22px;border-bottom:1px solid #f3f3f3;}
+.list_poll dl {width:500px;padding-right:105px;padding-left:35px;}
+.list_poll dt {position:relative;padding-bottom:15px;}
+.list_poll dt span {display:block;position:absolute;top:7px;left:-35px;width:30px;height:30px;background:url('https://images.joins.com/ui_joongang/news/pc/article/i_poll_q.png') 0 0 no-repeat;text-indent:-9999px;overflow:hidden;}
+.list_poll dt strong {display:block;color:#231f20;font-weight:normal;font-size:20px;line-height:30px;letter-spacing:-0.07em;}
+.list_poll dt em {display:block;margin-top:3px;color:#959494;}
+.list_poll dd {padding:7px 0 0 0;}
+.list_poll dd strong {display:block;margin-bottom:7px;color:#737475;font-weight:normal;font-size:14px;line-height:21px;}
+.list_poll dd .bar_graph, .list_poll dd .bar_graph .bar {display:inline-block;*display:inline;position:relative;height:10px;background-repeat:no-repeat;vertical-align:top;zoom:1;}
+.list_poll dd .bar_graph {margin-right:5px;background-position:0 0;}
+.list_poll dd .bar_graph .bar {width:100%;left:5px;background-position:100% -10px;}
+.list_poll dd .bar_graph em {position:absolute;top:-6px;*top:-7px;right:-50px;width:40px;font-weight:bold;font-size:14px;line-height:21px;}
+:root .list_poll dd .bar_graph em {top:-7px\0/IE9;}
+.list_poll dd.answer01 .bar_graph, .list_poll dd.answer01 .bar_graph .bar {background-image:url(https://images.joins.com/ui_joongang/news/pc/main/k_digital_ssulzun01.gif);}
+.list_poll dd.answer02 .bar_graph, .list_poll dd.answer02 .bar_graph .bar {background-image:url(https://images.joins.com/ui_joongang/news/pc/main/k_digital_ssulzun02.gif);}
+.list_poll dd.answer01 .bar_graph em {color:#e9aa00;}
+.list_poll dd.answer02 .bar_graph em {color:#5d81c3;}
+.list_poll dd.more {margin-top:-9px;font-size:11px;line-height:17px;}
+.list_poll dd.more a {color:#5d81c3;}
+.list_poll li > [class^="btn_"] {position:absolute;top:27px;right:0;width:96px;height:24px;padding-top:4px;color:#fff;font-size:13px;line-height:19px;text-align:center;}
+:root .list_poll li > [class^="btn_"] {line-height:17px\0/IE9;}
+.list_poll .btn_ing {background:url('https://images.joins.com/ui_joongang/news/pc/list/b_poll_ing.png') 0 0 no-repeat;}
+.list_poll .btn_wait {background:url('https://images.joins.com/ui_joongang/news/pc/list/b_poll_wait.png') 0 0 no-repeat;}
+.list_poll .btn_end {background:url('https://images.joins.com/ui_joongang/news/pc/list/b_poll_end.png') 0 0 no-repeat;}
+
+/* profile */
+.profile {display:block;}
+.profile .photo {display:block;position:relative;margin:0 auto;overflow:hidden;}
+.profile .frame {display:block;position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;}
+.profile strong,.profile h2 {display:block;margin-top:5px;font-weight:bold;font-size:15px;line-height:22px;letter-spacing:-0.04em;text-align:center;}
+.profile strong a, .profile strong a,.profile h2 a {color:#241815;}
+.profile em {display:block;font-size:11px;line-height:15px;letter-spacing:-0.02em;text-align:center;}
+.profile em, .profile em a {color:#a9b1b9;}
+
+#loading {display:none;position:fixed;z-index:10001;top:0;left:0;width:100%;height:100%;background:url('https://images.joins.com/ui_joongang/news/pc/common/k_loading.png') no-repeat 50% 50%;}
+#loading img {position:absolute;top:50%;left:50%;width:64px;height:64px;margin:-32px 0 0 -32px;}
+
+/* sub */
+.rts {position:relative;z-index:1;padding:11px 20px 20px 19px;border-top:1px solid #ebebeb;} /* z-index:1; */
+.rts .subtit_comm {color:#5d81c3;font-size:13px;line-height:19px;letter-spacing:-0.02em;}
+.rts .subtit_comm a {color:#5d81c3;}
+.rts .add {top:12px;right:20px;}
+
+/* DA */
+.sub_da_300 {position:relative;width:300px;height:250px;margin-left:-1px;padding:0;border-top:none;z-index:1;}
+.sub_da_300 .bd {vertical-align:top;line-height:0;}
+.sub_datxt{margin-top:-20px;border-top:none;}
+
+.btn_close_ad {display:block;position:absolute;z-index:1001;top:0;right:0;width:23px;height:23px;background:url('https://images.joins.com/ui_joongang/news/pc/common/b_close_ad.png') 0 0 no-repeat;text-indent:-9999px;overflow:hidden;}
+
+.sub_da_250 {padding-top:20px;}
+.sub_da_250 .bd {vertical-align:top;}
+.sub_da_260 {width:260px;height:250px;padding-top:30px;}
+.sub_da_260 .bd {vertical-align:top;}
+
+.sub_kweather {width:300px;margin-left:-1px;padding:0;}
+
+/* 프리미엄 */
+.sub_premium_link {padding-top:11px;padding-bottom:23px;}
+/* 비즈 링크 */
+.biz_link {padding-top:6px;padding-bottom:23px;}
+/* 인기 링크 */
+.popular_link {padding-top:10px;}
+/* 네티즌 이슈 */
+.sponsored_link {padding-top:9px;padding-bottom:22px;}
+/* 스페셜 링크 */
+.special_link {padding-top:9px;padding-bottom:19px;}
+/* 핫이슈 링크 */
+.hotissue_link {padding-bottom:26px;}
+/* 프리미엄 링크 */
+.premium_link {padding-top:6px;padding-bottom:23px;}
+
+/* 내부 콘텐트 프로모션 영역 */
+.sub_promotion {position:relative;width:260px;height:52px;margin:0 20px 20px 19px;padding:0;border-top:none;}
+.sub_promotion img {width:260px;height:52px;vertical-align:top;}
+.sub_imc {position:relative;width:260px;height:52px;margin:0 20px 20px 19px;padding:0;border-top:none;}
+.sub_imc img {width:260px;height:52px;vertical-align:top;}
+
+/* 추천기사, 추천 연재, 중앙 연재 */
+.sub_series .bd {margin-top:12px;overflow:hidden;}
+.sub_series ul {margin-top:-5px;*width:260px;}
+.sub_series li {margin-top:5px;padding-bottom:5px;padding-top:5px;border-top:1px solid #f8f8f8;}
+.sub_series li {zoom:1;}
+.sub_series li:after {content:'.';display:block;font-size:0;height:0px;line-height:0;clear:both;}
+.sub_series .thumb {display:block;float:left;width:50px;height:50px;margin-right:10px;overflow:hidden;}
+.sub_series .thumb img {width:50px;height:50px;}
+.sub_series .text_wrap {height:50px;}
+.sub_series .text_center > strong {display:block;max-height:40px;margin-top:-1px;font-weight:bold;font-size:14px;line-height:20px;letter-spacing:-0.02em;overflow:hidden;}
+.sub_series .text_center > strong a {color:#241815;white-space:pre-line;}
+.sub_series .text_center > strong img {margin-top:-1px;margin-bottom:1px;}
+.sub_series .list_top {position:relative;z-index:2;}
+.sub_series .list_top li {padding-top:0;padding-bottom:8px;border-top:none;background:#fff;}
+.sub_series .list_top .thumb {float:none;width:260px;height:100%;margin-right:0;}
+.sub_series .list_top .thumb img {width:260px;height:100%;max-height:120px;}
+.sub_series .list_top .text_wrap {height:auto;}
+.sub_series .list_top .text_center > strong {max-height:48px;margin-top:4px;font-weight:bold;font-size:17px;line-height:24px;letter-spacing:-0.07em;}
+.sub_series .list .thumb {float:right;margin-right:auto;margin-left:0;}
+.sub_series .list_photo .thumb {float:right;position:relative;width:90px;margin-right:auto;margin-left:10px;}
+.sub_series .list_photo .thumb img {width:90px;}
+.sub_series .list_people .photo {display:block;float:right;position:relative;width:50px;height:50px;margin-left:10px;overflow:hidden;}
+.sub_series .list_people .photo img {width:50px;min-height:50px;}
+.sub_series .list_portal {margin-top:-6px;}
+.sub_series .list_portal .thumb {float:right;margin-right:auto;margin-left:10px;}
+.sub_series .list_portal .text_center > strong {height:20px;font-weight:bold;overflow:hidden;}
+.sub_series .list_portal .lead {display:block;height:17px;margin-top:2px;font-size:11px;line-height:18px;overflow:hidden;}
+.sub_series .list_portal .lead a {color:#241815;}
+.sub_series .list_sns .thumb {float:right;margin-right:auto;margin-left:20px;}
+.sub_series .list_sns .text_center > strong {font-family:'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','Noto Sans',Dotum,'돋움',sans-serif;}
+.sub_series .list .text_wrap, .sub_series .list_photo .text_wrap, .sub_series .list_people .text_wrap {height:auto;padding:2px 0;}
+.sub_series .list .thumb + .text_wrap, .sub_series .list_photo .thumb + .text_wrap, .sub_series .list_people .thumb + .text_wrap {height:50px;padding:0;}
+.sub_series .ad_text {padding:2px 0;}
+
+/* 추천 연재 */
+.sub_recommend_series .bd {margin-top:12px;}
+.sub_recommend_series .slide_wrap {width:260px;}/* height:169px; */
+.sub_recommend_series .slide_list {position:relative;width:260px;overflow:hidden;}/* height:169px; */
+.sub_recommend_series .slide {float:left;width:260px;}/* height:169px; */
+.sub_recommend_series li {height:19px;margin-bottom:7px;padding-top:7px;border-top:1px solid #f8f8f8;font-size:13px;line-height:19px;letter-spacing:-0.02em;overflow:hidden;}
+.sub_recommend_series li:first-child {border-top:none;}
+.sub_recommend_series li, .sub_recommend_series li a {color:#231f20;}
+.sub_recommend_series .btn_wrap {position:absolute;top:12px;right:20px;width:40px;height:18px;overflow:hidden;}
+.sub_recommend_series .btn-prev, .sub_recommend_series .btn-next {display:block;float:left;width:20px;height:18px;background-image:url('https://images.joins.com/ui_joongang/news/pc/main/b_slide_info.png');background-repeat:no-repeat;text-indent:-9999px;overflow:hidden;}
+.sub_recommend_series .btn-prev {background-position:0 0;}
+.sub_recommend_series .btn-next {margin-left:-1px;background-position:100% 0;}
+
+/* 중앙 연재 */
+.sub_joongang_series .bd {margin-top:12px;}
+.sub_joongang_series ul {margin-top:8px;padding-top:6px;border-top:1px solid #f8f8f8;}
+.sub_joongang_series ul:first-child {margin-top:0;padding-top:0;border-top:none;}
+.sub_joongang_series li {height:18px;margin-top:2px;font-size:12px;line-height:18px;letter-spacing:-0.02em;overflow:hidden;}
+.sub_joongang_series li:first-child {margin-top:0;}
+.sub_joongang_series li, .sub_joongang_series li a {color:#231f20;}
+.sub_joongang_series li em {font-weight:bold;}
+.sub_joongang_series li strong {font-weight:normal;}
+
+/* 많이 본 기사 */
+.sub_article .bd {padding-top:12px;}
+.sub_article li {position:relative;height:18px;margin-top:4px;padding-left:27px;overflow:hidden;}
+.sub_article em {position:absolute;top:0;left:0;width:14px;color:#9a9a9a;font-weight:bold;letter-spacing:0;text-align:center;} 
+.sub_article strong {color:#231f20;font-weight:normal;font-size:12px;line-height:18px;letter-spacing:-0.02em;}
+.sub_article strong a {color:#231f20;}
+.sub_article .top em {color:#5d81c3;}
+.sub_article .top strong {font-weight:bold;}
+.sub_article_jplus .top em {color:#7560cc;}
+.sub_article .tab{position:absolute;top:12px;right:17px;color:#d0d0d1;font-size:11px;letter-spacing:-0.02em;line-height:17px;text-align:right;}
+.sub_article .tab .on{color:#6c8bc7;}
+.sub_article .tab a{color:#8b8b8b;font-size:12px;font-weight:bold;}
+.sub_article .list{display:none;}
+.sub_article ul.on{display:block;}
+.cover_e .sub_article li{height:20px;}
+.cover_e .sub_article strong{font-size:13px;}
+
+/* 포토이슈 */
+.sub_photo .bd {margin-top:12px;}
+.sub_photo .slide_list_wrap {position:relative;width:260px;height:162px;}
+.sub_photo .slide_list {position:relative;z-index:1;width:260px;height:162px;overflow:hidden;}
+.sub_photo .slide, .sub_photo .slide_list li {float:left;width:260px;height:162px;}
+.sub_photo .slide_list .thumb {display:block;position:relative;width:260px;height:162px;overflow:hidden;}
+.sub_photo .slide_list .thumb img {width:260px;height:162px;}
+.sub_photo .slide_list strong {display:block;position:absolute;right:15px;bottom:15px;left:15px;height:21px;color:#fff;font-weight:bold;font-size:14px;line-height:21px;text-align:center;overflow:hidden;}
+.sub_photo .slide_list strong a {color:#fff;}
+.sub_photo .btn-prev, .sub_photo .btn-next {display:block;position:absolute;top:50%;z-index:2;width:28px;height:26px;margin-top:-13px;text-indent:-9999px;overflow:hidden;cursor:pointer;}
+.sub_photo .btn-prev {left:0;background:url('https://images.joins.com/ui_joongang/news/pc/common/b_prev_photo_issue.png') 50% 0 no-repeat;}
+.sub_photo .btn-next {right:0;background:url('https://images.joins.com/ui_joongang/news/pc/common/b_next_photo_issue.png') 50% 0 no-repeat;}
+.sub_photo .thumb_list {margin-top:5px;}
+.sub_photo .thumb_list ul {margin-left:-5px;}
+.sub_photo .thumb_list li {float:left;width:48px;height:30px;margin-left:5px;}
+.sub_photo .thumb_list .thumb {display:block;position:relative;width:48px;height:30px;overflow:hidden;}
+.sub_photo .thumb_list .thumb img {width:48px;height:30px;}
+.sub_photo .thumb_list .frame {display:none;position:absolute;left:0;top:0;width:48px;height:30px;background:url('https://images.joins.com/ui_joongang/news/pc/common/k_frame_photo_issue.png') 0 0 no-repeat;}
+.sub_photo .thumb_list .active .frame {display:block;}
+.sub_photo .ft {position:absolute;top:12px;right:20px;color:#737475;font-size:13px;line-height:19px;}
+.sub_photo .shadow {background:url('https://images.joins.com/ui_joongang/news/pc/common/k_mask.png') 0 bottom repeat-x;}
+
+/* 인기 J플러스 */
+.sub_jplus .bd {margin-top:12px;}
+.sub_jplus li {padding:7px 0;border-top:1px solid #ebebeb;}
+.sub_jplus li:first-child {border-top:none;}
+.sub_jplus li {zoom:1;}
+.sub_jplus li:after {content:'.';display:block;font-size:0;height:0px;line-height:0;clear:both;}
+.sub_jplus .thumb {float:right;position:relative;width:37px;height:37px;margin:0 0 0 10px;overflow:hidden;}
+.sub_jplus .thumb img {width:37px;min-height:37px;}
+.sub_jplus .frame {position:absolute;left:0;top:0;width:37px;height:37px;background:url('https://images.joins.com/ui_joongang/news/pc/common/k_frame_popular_jplus.png') 0 0 no-repeat;}
+.sub_jplus strong {display:block;max-height:36px;font-weight:normal;font-size:12px;line-height:18px;letter-spacing:-0.02em;overflow:hidden;}
+.sub_jplus strong a {color:#231f20;}
+.sub_jplus strong img {display:none;}
+.sub_jplus em {display:block;height:17px;margin-top:1px;color:#d6d6d6;font-size:11px;line-height:17px;letter-spacing:-0.02em;overflow:hidden;}
+.sub_jplus em a {color:#d6d6d6;}
+.sub_jplus em span {color:#899bb3;}
+.sub_jplus .noline li {border:0 none;}
+.sub_jplus .text_wrap {width:213px;height:36px;}
+
+/* 핫이슈 */
+.sub_issue .bd {*width:100%;padding-top:12px;}
+.sub_issue .bd ul {margin:-10px 0 0 -10px;}
+.sub_issue .bd li {float:left;position:relative;width:125px;height:125px;margin:10px 0 0 10px;overflow:hidden;}
+.sub_issue .bd li a {display:block;cursor:pointer;}
+.sub_issue .bd li .thumb {display:block;position:relative;width:125px;height:125px;overflow:hidden;}
+.sub_issue .bd li .thumb img{width:125px;height:125px;}
+.sub_issue .bd li .shadow {background:#000;opacity:.50;-ms-filter:alpha(opacity=50);filter:alpha(opacity=50);}
+.sub_issue em, .sub_issue em a {display:inline-block;*display:inline;zoom:1;background-image:url('https://images.joins.com/ui_joongang/news/pc/main/k_issue_page.png');background-repeat:no-repeat;background-position:0 0;vertical-align:top;}
+.sub_issue em {position:absolute;top:9px;left:9px;max-width:97px;height:22px;margin-left:10px;background-position:100% -22px;}
+.sub_issue em a {position:relative;left:-10px;max-width:87px;height:20px;padding-top:2px;padding-left:10px;color:#fff;font-size:11px;line-height:17px;*line-height:18px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;word-break:normal;word-wrap:normal;}
+:root .sub_issue em a {line-height:18px\0/IE9;}
+.sub_issue .bd li strong {overflow:hidden;position:absolute;right:9px;bottom:9px;left:9px;max-height:54px;font-weight:normal;} /* opacity:0.7;-ms-filter:alpha(opacity=70);filter:alpha(opacity=70); */
+.sub_issue .bd li strong a {color:#fff;}
+
+/* 부서 별 SNS */
+.sub_sns {display:block;*display:none;width:288px;margin-left:-1px;padding:16px 0 16px 12px;}
+.sub_sns .bd {position:relative;width:288px;height:68px;overflow:hidden;}
+.sub_sns .bd > div, .sub_sns .bd > iframe {position:absolute;right:-1px;top:-1px;left:-1px;width:290px;height:70px;overflow:hidden;}
+.sub_sns.v2{padding:8px 0 12px 12px;border-top:1px solid #ebebeb;}
+
+/* 사이트 바로가기 */
+.sub_site {padding-right:0;}
+.sub_site .bd {margin-top:17px;overflow:hidden;}
+.sub_site ul {width:281px;margin:-1px 0 0 -1px;}
+.sub_site li {float:left;width:92px;border-top:1px solid #f5f5f5;border-left:1px solid #f5f5f5;}
+
+/* Voice of America */
+.sub_voice .bd {margin-top:12px;}
+.sub_voice .thumb {display:block;position:relative;width:260px;height:182px;overflow:hidden;}
+.sub_voice .thumb img {width:260px;height:182px;}
+.sub_voice .icon_video,.ab_vod .icon_video{bottom:9px;right:8px;width:40px;height:40px;background:url('https://images.joins.com/ui_joongang/news/pc/main/i_video_medium.png') 0 0 no-repeat;text-indent:-9999px;overflow:hidden;cursor:pointer;vertical-align:0;}
+.sub_voice strong {display:block;height:18px;margin-top:10px;font-weight:normal;font-size:12px;line-height:18px;overflow:hidden;}
+.sub_voice strong a {color:#231f20;}
+
+/* 기자 Q&A */
+.sub_qna {margin:0 0 20px 19px;padding:11px 20px 20px 20px;background:#f8f8f8;}
+.sub_qna .subtit_comm {color:#241815;}
+.sub_qna .subtit_comm a {color:#241815;}
+.sub_qna .bd {margin-top:13px;}
+.sub_qna p {color:#959494;font-weight:bold;font-size:13px;line-height:19px;letter-spacing:-0.02em;}
+.sub_qna dt {color:#241815;font-weight:bold;font-size:19px;line-height:30px;letter-spacing:-0.07em;}
+.sub_qna dd {margin-top:10px;padding:13px 15px 11px;border:2px solid #d6d6d6;background:#fff;color:#241815;font-size:11px;line-height:16px;letter-spacing:-0.02em;}
+.sub_qna dd a {color:#5d81c3;}
+
+/* 경제지표 */
+.sub_indicator .bd {margin-top:12px;}
+.sub_indicator dl {float:left;width:86px;border-left:1px solid #f8f8f8;text-align:center;}
+.sub_indicator dl:first-child {border-left:none;}
+.sub_indicator dt {display:block;color:#737475;font-size:11px;line-height:17px;letter-spacing:-0.02em;}
+.sub_indicator dd strong {display:block;margin-top:-2px;color:#231f20;font-size:14px;line-height:21px;letter-spacing:-0.02em;}
+.sub_indicator dd .up, .sub_indicator dd .down {display:block;height:41px;margin-top:4px;padding-top:13px;}
+.sub_indicator dd .up {background:url('https://images.joins.com/ui_joongang/news/pc/common/k_economic_indicator_up.png') 0 0 no-repeat;}
+.sub_indicator dd .down {background:url('https://images.joins.com/ui_joongang/news/pc/common/k_economic_indicator_down.png') 0 0 no-repeat;}
+.sub_indicator dd em {display:block;margin-top:-3px;color:#fff;font-size:11px;line-height:17px;letter-spacing:-0.02em;}
+.sub_indicator dd em:first-child {margin-top:0;font-weight:bold;}
+.sub_indicator .ft {position:relative;margin-top:10px;}
+.sub_indicator .search {position:relative;width:177px;height:26px;border:1px solid #d6d6d6;}
+.sub_indicator .search label {position:absolute;top:6px;left:9px;color:#c3c3c3;font-size:11px;cursor:pointer;}
+.sub_indicator .search input.txt {position:relative;width:109px;margin:1px;*margin:0;padding:7px 8px 5px;border:none;background:transparent;font-size:11px;}
+.sub_indicator .search button.btn {position:absolute;top:0;right:0;width:26px;height:26px;background:url("https://images.joins.com/ui_joongang/news/pc/common/b_search_economic_indicator.png") 0 0 no-repeat;text-indent:-9999px;overflow:hidden;}
+.sub_indicator .ft a {display:block;position:absolute;top:0;right:0;width:77px;height:22px;padding-top:6px;background:url('https://images.joins.com/ui_joongang/news/pc/common/b_economic_indicator.png') 0 0 no-repeat;color:#231f20;font-size:11px;line-height:17px;letter-spacing:-0.02em;text-align:center;overflow:hidden;}
+
+/* 금주의 week&+ */
+.sub_week .bd {position:relative;min-height:125px;margin-top:12px;}
+.sub_week li {width:150px;margin-top:6px;padding-top:8px;border-top:1px solid #f8f8f8;}
+.sub_week li:first-child {margin-top:0;padding-top:0;border-top:none;}
+.sub_week strong {max-height:54px;font-size:12px;}
+.sub_week li:first-child strong {font-weight:bold;}
+.sub_week .thumb {display:block;position:absolute;top:3px;right:0;width:88px;height:116px;padding:5px 1px 1px;overflow:hidden;}
+.sub_week .thumb img {width:88px;height:116px;}
+.sub_week .frame {position:absolute;left:0;top:0;width:90px;height:122px;background:url('https://images.joins.com/ui_joongang/news/pc/common/k_frame_best_seller.png') 0 0 no-repeat;}
+.sub_week strong {display:block;font-weight:normal;line-height:18px;letter-spacing:-0.02em;overflow:hidden;}
+.sub_week strong a {color:#231f20;}
+
+/* 퇴직준비 셀프 테스트 */
+.sub_retire .bd {margin-top:12px;}
+.sub_retire li {padding:12px 0;border-top:1px solid #f6f6f6;}
+.sub_retire li:first-child {border-top:none;}
+.sub_retire li {zoom:1;}
+.sub_retire li:after {content:'.';display:block;font-size:0;height:0px;line-height:0;clear:both;}
+.sub_retire .thumb {float:right;width:50px;height:50px;margin:-7px 0 -9px 10px;overflow:hidden;}
+.sub_retire .thumb img {width:50px;height:50px;}
+.sub_retire strong {display:block;height:18px;font-weight:normal;font-size:12px;line-height:18px;letter-spacing:-0.02em;overflow:hidden;}
+.sub_retire strong a {color:#231f20;}
+.sub_retire em {display:block;height:16px;margin-top:2px;color:#899bb3;font-size:11px;line-height:16px;letter-spacing:-0.02em;overflow:hidden;}
+
+/* 올해의 대학평가 */
+.sub_univ_rank {border-right:1px solid #ebebeb;background-color:#fcfcfc;}
+.sub_univ_rank .subtit_comm {padding-bottom:20px;color:#231f20;}
+.sub_univ_rank .subtit_comm span {color:#a79a5f;}
+.sub_univ_rank table {width:100%;word-break:normal;text-align:left;}
+.sub_univ_rank table thead th {height:26px;vertical-align:middle;font:bold 11px "돋움",Dotum,sans-serif;border-bottom:1px solid #e8e8e8;color:#666;}
+.sub_univ_rank table tbody td {height:22px;font-size:12px;color:#635f5d;}
+.sub_univ_rank table tbody tr:first-child td {padding-top:4px;}
+.sub_univ_rank table .rank {display:inline-block;*display:inline;width:13px;height:12px;text-align:center;font:bold 11px/11px Tahoma,"돋움",Dotum,sans-serif;letter-spacing:-1px;border:1px solid #e0e0e0;background-color:#fff;color:#888;*zoom:1;}
+.sub_univ_rank table .rank.top {color:#978224;}
+.sub_univ_rank table .top {font-weight:bold;color:#221815;}
+
+/* TALK NK */
+.sub_talk_nk .bd {padding-top:12px;}
+.sub_talk_nk li {height:19px;padding-top:9px;color:#231f20;font-weight:bold;font-size:13px;line-height:19px;letter-spacing:-0.02em;overflow:hidden;}
+.sub_talk_nk li:first-child {padding-top:0;}
+.sub_talk_nk li a {color:#231f20;}
+
+/* 많이 본 동영상 */
+.sub_video .bd {margin-top:12px;}
+.sub_video li {margin-top:5px;padding-top:5px;border-top:1px solid #f8f8f8;}
+.sub_video li:first-child {margin-top:0;padding-top:0;border-top:none;}
+.sub_video li {zoom:1;}
+.sub_video li:after {content:'.';display:block;font-size:0;height:0px;line-height:0;clear:both;}
+.sub_video .thumb {float:left;position:relative;width:100px;height:70px;margin-right:10px;overflow:hidden;}
+.sub_video .thumb img {width:100px;height:70px;}
+.sub_video strong {display:block;max-height:36px;padding-top:7px;font-weight:normal;font-size:12px;line-height:18px;letter-spacing:-0.02em;overflow:hidden;}
+.sub_video strong a {color:#231f20;}
+.sub_video .date{color:#b7b7b7;}
+.sub_video .view_comment {display:block;margin-top:4px;color:#d6d6d6;font-size:11px;line-height:16px;letter-spacing:-0.02em;overflow:hidden;}
+.sub_video .view, .sub_video .comment {color:#737475;}
+.sub_video .view_comment em {color:#899bb3;font-weight:bold;letter-spacing:0;}
+
+/* 관련 키워드 */
+.sub_keyword .bd {margin-top:12px;}
+.sub_keyword ul {margin-top:-7px;margin-right:-7px;}
+.sub_keyword li {display:inline-block;*display:inline;zoom:1;max-width:251px;height:25px;margin-top:7px;margin-left:9px;background:url('https://images.joins.com/ui_joongang/news/pc/common/k_hot_sub_keyword.png') 100% -25px no-repeat;font-size:12px;line-height:25px;vertical-align:top;}
+.sub_keyword li a {display:inline-block;*display:inline;zoom:1;position:relative;left:-9px;max-width:242px;height:22px;padding-top:3px;padding-left:9px;background:url('https://images.joins.com/ui_joongang/news/pc/common/k_hot_sub_keyword.png') 0 0 no-repeat;color:#3c3e40;font-size:12px;line-height:18px;*line-height:19px;letter-spacing:-0.08em;vertical-align:top;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;word-break:normal;word-wrap:normal;}
+:root .sub_keyword li a {line-height:19px\0/IE9;}
+.sub_keyword li.issue a {color:#5d81c3;}
+.sub_journalist_series .hd {margin-right:40px;}
+.sub_journalist_series .bd {margin-top:12px;}
+.sub_journalist_series ul {margin-top:-4px;}
+.sub_journalist_series li {position:relative;height:18px;margin-top:4px;padding-left:10px;color:#231f20;font-size:12px;line-height:18px;letter-spacing:-0.08em;overflow:hidden;}
+.sub_journalist_series li a {color:#231f20;}
+.sub_journalist_series li .icon {display:block;position:absolute;top:9px;left:0;width:2px;height:2px;background:#b9b9ba;}
+
+/* 기사찾기 */
+.sub_search {margin:0 0 30px 19px;padding:11px 20px 20px 20px;background:#f8f8f8;}
+.sub_search .subtit_comm {color:#241815;}
+.sub_search .subtit_comm a {color:#241815;}
+.sub_search .bd {margin-top:12px;}
+.sub_search p {margin:0 -5px;color:#959494;font-weight:bold;font-size:13px;line-height:19px;letter-spacing:-0.02em;text-align:center;}
+.sub_search .search {position:relative;width:236px;height:36px;margin-top:18px;border:2px solid #d6d6d6;background:#fff;}
+.sub_search .search input.txt {position:relative;width:183px;margin:1px;*margin:0;padding:8px;border:none;background:transparent;font-size:12px;}
+.sub_search .search button.btn {position:absolute;top:0;right:0;width:36px;height:36px;background:url("https://images.joins.com/ui_joongang/news/pc/common/b_search_sub.png") 0 0 no-repeat;text-indent:-9999px;overflow:hidden;}
+
+/* aside */
+.rta {padding:23px 12px 30px 20px;border-top:1px solid #ececec;font-family:'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','Noto Sans',Dotum,'돋움',sans-serif;}
+.rta .subtit_comm {color:#2E2A26;font-size:20px;letter-spacing:-0.07em;line-height:23px;}
+.rta .subtit_comm a {color:#2E2A26;}
+.rta .add {top:19px;right:20px;}
+.btn_close_aside {position:absolute;z-index:3;top:10px;right:10px;width:15px;height:15px;background:url('https://images.joins.com/ui_joongang/news/pc/common/b_close_aside.png') 0 0 no-repeat;text-indent:-9999px;overflow:hidden;}
+
+/* SNS 소개 */
+.sub_share {position:relative;z-index:2;margin-bottom:-1px;padding-top:51px;padding-bottom:30px;border-top:none;background:#f8f8f8;}
+.sub_share .hd p {width:213px;margin:0 auto;background:url('https://images.joins.com/ui_joongang/news/pc/common/k_aside_sns.png') 0 0 no-repeat;font-size:17px;line-height:24px;letter-spacing:-0.07em;text-align:center;}
+.sub_share ul {margin:20px auto 0;text-align:center;}
+.sub_share li {display:inline-block;*display:inline;zoom:1;margin:0 1px;vertical-align:top;cursor:pointer;}
+.sub_share li a {display:block;width:40px;height:40px;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/i_share_aside.png');background-repeat:no-repeat;line-height:0;text-indent:-9999px;overflow:hidden;}
+.sub_share .icon_facebook {background-position:0 0;}
+.sub_share .icon_twitter {background-position:-40px 0;}
+.sub_share .icon_googleplus {background-position:-80px 0;}
+.sub_share .icon_pinterest {background-position:-120px 0;}
+.sub_share .icon_kakaostory {background-position:-160px 0;}
+.sub_share .icon_instagram {background-position:-200px 0;}
+.sub_share .icon_kakaotalk {background-position:-240px 0;}
+.sub_share .icon_poketroket {background-position:-280px 0;}
+.sub_share .icon_email {background-position:-320px 0;}
+.sub_share .icon_pen {background-position:-360px 0;}
+.sub_share .icon_rss {background-position:-400px 0;}
+.sub_share .icon_naver_post {background-image:url('https://images.joins.com/ui_joongang/news/pc/common/i_share_aside_naver_post.png');background-position:0 0;}
+
+/* 트렌드뉴스 */
+.rta.sub_trend {padding-bottom:32px;padding-top:4px;border-top:none;}
+.sub_trend .hd p {margin-top:4px;color:#a9b1b9;font-size:11px;letter-spacing:-0.02em;}
+.sub_trend ul {padding-top:13px;padding-right:5px;}
+.sub_trend li {position:relative;margin-top:10px;padding:2px 0 0 28px;vertical-align:top;zoom:1;}
+.sub_trend li:after {content:".";display:block;font-size:0;height:0px;line-height:0;clear:both;}
+.sub_trend em {position:absolute;top:1px;left:-1px;color:#2E2A26;font-family:'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','Noto Sans',Dotum,'돋움',sans-serif;font-size:14px;font-weight:bold;overflow:hidden;}
+.sub_trend .thumb {display:block;float:right;position:relative;width:40px;height:40px;margin:-2px 0 0 10px;overflow:hidden;}
+.sub_trend .thumb img {width:40px;height:40px;}
+.sub_trend .photo {display:block;float:right;position:relative;width:40px;height:40px;margin:-2px 0 0 10px;overflow:hidden;}
+.sub_trend .photo img {width:40px;min-height:40px;}
+.sub_trend .frame{position:absolute;left:0;top:0;width:40px;height:40px;background:url("https://images.joins.com/ui_joongang/news/pc/common/k_frame_sub_trend.png") 0 0 no-repeat;}
+.sub_trend strong {display:block;max-height:36px;color:#241815;font-size:13px;font-weight:bold;line-height:18px;letter-spacing:-0.02em;overflow:hidden;}
+.sub_trend strong a {color:#241815;}
+.sub_trend_jplus .subtit_comm {color:#7560cc;}
+.sub_trend_jplus strong {height:18px;}
+.aside_jplus .rta .subtit_comm, .aside_jplus .rta .subtit_comm a {color:#7560cc;}
+.aside_jplus .sub_trend .rank01, .sub_trend_jplus .rank01 {background-position:-20px 0;}
+.aside_jplus .sub_trend .rank02, .sub_trend_jplus .rank02 {background-position:-20px -10px;}
+.aside_jplus .sub_trend .rank03, .sub_trend_jplus .rank03 {background-position:-20px -20px;}
+.aside_jplus .sub_trend .rank04, .sub_trend_jplus .rank04 {background-position:-20px -30px;}
+.aside_jplus .sub_trend .rank05, .sub_trend_jplus .rank05 {background-position:-20px -40px;}
+.aside_jplus .sub_trend .rank06, .sub_trend_jplus .rank06 {background-position:-20px -50px;}
+.aside_jplus .sub_trend .rank07, .sub_trend_jplus .rank07 {background-position:-20px -60px;}
+.aside_jplus .sub_trend .rank08, .sub_trend_jplus .rank08 {background-position:-20px -70px;}
+.aside_jplus .sub_trend .rank09, .sub_trend_jplus .rank09 {background-position:-20px -80px;}
+.aside_jplus .sub_trend .rank10, .sub_trend_jplus .rank10 {background-position:-20px -90px;}
+
+/* 배너 */
+.aside_banner {padding:20px;border-top:1px solid #ececec;}
+.aside_banner ul {margin-top:-10px;}
+.aside_banner li {margin-top:10px;border:1px solid #ebebeb;background:#fff;}
+.aside_banner li {zoom:1;}
+.aside_banner li:after {content:'.';display:block;font-size:0;height:0px;line-height:0;clear:both;}
+.aside_banner .thumb {display:block;float:right;width:80px;height:80px;margin:-1px -1px -1px 10px;overflow:hidden;}
+.aside_banner .thumb img {width:80px;height:80px;margin:0;}
+.aside_banner .text_wrap {height:78px;}
+.aside_banner .onair_wrap {display:block;margin-left:10px;}
+.aside_banner .onair_wrap .icon_onair {display:inline-block;*display:inline;*zoom:1;width:52px;height:18px;margin:-1px 0 1px;background:url('https://images.joins.com/ui_joongang/news/pc/common/i_onair_aside_banner.png') 0 0 no-repeat;vertical-align:middle;overflow:hidden;}
+.aside_banner .onair_wrap .icon_onair a {display:block;width:52px;height:18px;text-indent:-9999px;overflow:hidden;}
+.aside_banner .onair_wrap em {color:#737475;font-size:11px;line-height:17px;}
+.aside_banner .onair_wrap em a {color:#737475;}
+.aside_banner strong {display:block;max-height:40px;margin-left:10px;color:#231815;font-weight:bold;font-size:14px;line-height:20px;letter-spacing:-0.02em;overflow:hidden;}
+.aside_banner .thumb + .text_wrap strong {width:159px;}
+.aside_banner strong a {color:#231815;}
+.aside_banner li > a img {width:260px;height:80px;margin:-1px;}
+
+/* 주요뉴스 */
+.btn_refresh {display:block;position:absolute;top:0;right:0;width:20px;height:20px;background:url('https://images.joins.com/ui_joongang/news/pc/common/b_refresh.png') 0 0 no-repeat;text-indent:-9999px;overflow:hidden;}
+
+.sub_headline {position:relative;padding-bottom:40px;}
+.sub_headline .hd p {margin-top:4px;color:#a9b1b9;font-size:11px;letter-spacing:-0.02em;}
+.sub_headline ul {margin-top:11px;}
+.sub_headline li {padding:15px 0;border-bottom:1px solid #ebebeb;vertical-align:top;zoom:1;}
+.sub_headline li:after {content:".";display:block;font-size:0;height:0px;line-height:0;clear:both;}
+.sub_headline .thumb {display:block;float:right;width:80px;height:60px;margin:-10px 0 -10px 10px;overflow:hidden;}
+.sub_headline .thumb img {width:80px;height:60px;}
+.sub_headline strong {display:block;max-height:40px;color:#221815;font-weight:bold;font-size:13px;line-height:20px;letter-spacing:-0.02em;overflow:hidden;}
+.sub_headline strong a {color:#221815;}
+.sub_headline .btn_refresh {top:20px;right:20px;}
+
+/* 지면보다 빠른 뉴스 */
+.sub_digital {position:relative;padding-bottom:0;}
+.sub_digital .hd p {margin-top:8px;color:#2E2A26;font-size:12px;letter-spacing:-0.075em;}
+.sub_digital .bd {position:relative;margin-top:28px;padding-bottom:25px;}
+.sub_digital .bd:after{content:'.';display:block;position:absolute;top:0;left:15px;width:1px;height:100%;background:#4B4844;z-index:-1;}
+.sub_digital .digital_news {position:relative;}
+.sub_digital .time {position:absolute;z-index:2;top:0;left:0;width:31px;padding:1px 0;background:#fff;color:#2E2A26;font-size:12px;line-height:17px;text-align:center;}
+.sub_digital ul {padding-left:15px;}
+.sub_digital li {position:relative;padding:0 0 18px 25px;border-left:1px solid #4B4844;vertical-align:top;zoom:1;}
+.sub_digital li:after {content:'.';display:block;font-size:0;height:0px;line-height:0;clear:both;}
+.sub_digital .icon{display:block;position:absolute;top:-1px;left:-3px;width:23px;height:23px;border-radius:23px;background:#fff;}
+.sub_digital .icon:after{content:'';display:block;position:absolute;top:9px;left:0;width:5px;height:5px;background:#4B4844;border-radius:5px;}
+.sub_digital strong {display:block;max-height:36px;color:#3c3e40;font-weight:bold;font-size:13px;line-height:18px;letter-spacing:-0.02em;overflow:hidden;}
+.sub_digital strong a {color:#3c3e40;}
+.sub_digital .thumb {display:block;width:170px;height:126px;margin:5px 0 2px;overflow:hidden;}
+.sub_digital .thumb img {width:170px;height:126px;}
+.sub_digital .ft button {display:block;position:absolute;top:20px;right:20px;width:20px;height:20px;background:url('https://images.joins.com/ui_joongang/news/pc/common/b_refresh.png') 0 0 no-repeat;text-indent:-9999px;overflow:hidden;}
+
+/* 필진 소개 */
+.sub_jplus_link {padding-bottom:24px;}
+.sub_jplus_link ul {margin:15px 10px 0;}
+.sub_jplus_link li {float:left;width:80px;font-size:13px;line-height:19px;letter-spacing:-0.02em;text-align:center;}
+.sub_jplus_link a {color:#a9b1b9;}
+.sub_jplus_link .icon {display:block;width:60px;height:60px;margin:0 auto 3px;overflow:hidden;}
+.sub_jplus_link .link01 .icon {background:url("https://images.joins.com/ui_joongang/news/pc/common/k_jplus_link01.png") 0 0 no-repeat;}
+.sub_jplus_link .link02 .icon {background:url("https://images.joins.com/ui_joongang/news/pc/common/k_jplus_link02.png") 0 0 no-repeat;}
+.sub_jplus_link .link03 .icon {background:url("https://images.joins.com/ui_joongang/news/pc/common/k_jplus_link03.png") 0 0 no-repeat;}
+
+/* 추천, 구독 필진 */
+.sub_writer {position:relative;}
+.sub_writer li {float:left;width:130px;margin-top:26px;text-align:center;}
+.sub_writer .profile {width:130px;}
+.sub_writer .profile .photo {float:none;width:60px;height:60px;}
+.sub_writer .profile .photo img {width:60px;min-height:60px;}
+.sub_writer .profile .frame {background:url('https://images.joins.com/ui_joongang/news/pc/jplus/k_frame60_gray.png') 0 0 no-repeat;}
+.sub_writer .profile em {height:15px;overflow:hidden;}
+.sub_writer .btn_follow {margin-top:8px;}
+.sub_writer p {height:91px;padding-top:67px;color:#231f20;font-size:15px;line-height:22px;letter-spacing:-0.02em;text-align:center;}
+
+/* 기자 홍보 */
+.sub_journalist {padding-right:0;}
+.sub_journalist .bd {padding-top:17px;}
+.sub_journalist .slide_wrap {position:relative;width:280px;height:205px;}
+.sub_journalist .slide_list {position:relative;width:280px;height:205px;overflow:hidden;}
+.sub_journalist .slide {float:left;width:280px;height:205px;}
+.sub_journalist .profile {display:block;height:138px;padding:0 45px;}
+.sub_journalist .profile .photo {display:block;position:relative;width:90px;height:90px;margin:0 auto;overflow:hidden;}
+.sub_journalist .profile .photo img {width:90px;min-height:90px;}
+.sub_journalist .profile .frame {display:block;position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;background:url('https://images.joins.com/ui_joongang/news/pc/main/k_frame_reporter_pr.png') 0 0 no-repeat;}
+.sub_journalist .profile strong {display:block;max-height:26px;margin-top:4px;font-weight:bold;font-size:19px;line-height:26px;letter-spacing:-0.07em;text-align:center;overflow:hidden;}
+.sub_journalist .profile strong a {color:#241815;}
+.sub_journalist .profile em {display:block;max-height:17px;margin-top:1px;font-size:11px;line-height:17px;letter-spacing:-0.02em;text-align:center;overflow:hidden;}
+.sub_journalist .profile em a {color:#899bb3;}
+.sub_journalist ul {font-family:'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','Noto Sans',Dotum,'돋움',sans-serif !important;}
+.sub_journalist ul {padding-top:25px;}
+.sub_journalist li {padding-left:0;height:19px;margin-top:2px;background:none;color:#737475;font-weight:bold;font-size:13px;line-height:19px;letter-spacing:-0.02em;overflow:hidden;}
+.sub_journalist li a {color:#737475;}
+.sub_journalist .btn-prev, .sub_journalist .btn-next {display:block;position:absolute;top:28px;width:35px;height:35px;background-image:url('https://images.joins.com/ui_joongang/news/pc/main/b_slide.png');background-repeat:no-repeat;text-indent:-9999px;overflow:hidden;}
+.sub_journalist .btn-prev {left:0;background-position:0 0;}
+.sub_journalist .btn-prev:hover {background-position:0 100%;}
+.sub_journalist .btn-next {right:0;background-position:100% 0;}
+.sub_journalist .btn-next:hover {background-position:100% 100%;}
+
+/*공통 Form*/
+.comm_form {margin-bottom:25px;border-top:1px solid #3c3e40;}
+.comm_form.first {margin-top:-40px;padding-bottom:55px;border-top:none;}
+.comm_form {zoom:1;}
+.comm_form:after {content:'.';display:block;font-size:0;height:0px;line-height:0;clear:both;}
+.comm_form .hd {float:left;width:260px;}
+.comm_form .hd h3 {color:#221815;font-weight:normal;font-size:29px;line-height:45px;letter-spacing:-0.07em;}
+.comm_form .hd h3 span {font-weight:bold;}
+.comm_form .hd p {margin-top:18px;color:#959494;font-size:15px;line-height:24px;letter-spacing:-0.05em;}
+.comm_form .hd p em {display:block;padding-top:10px;font-size:12px;line-height:18px;letter-spacing:-0.02em;}
+.comm_form .bd {position:relative;}
+.comm_form .guide {margin-top:37px;}
+.comm_form .guide:first-child {margin-top:5px;}
+.comm_form .guide dt {color:#7560cc;font-weight:bold;font-size:18px;line-height:27px;letter-spacing:-0.05em;}
+.comm_form .guide dd {margin-top:5px;color:#3c3e40;font-size:15px;line-height:26px;letter-spacing:-0.05em;}
+.comm_form table {width:100%;border:0;}
+.comm_form th, .comm_form td {border:0;}
+.comm_form tr:first-child th {padding-top:22px;}
+.comm_form tr:first-child td {padding-top:15px;}
+.comm_form tr:first-child .required {top:22px;}
+.comm_form th {position:relative;width:114px;padding:12px 0 0 25px;font-weight:normal;font-size:13px;line-height:22px;text-align:left;vertical-align:top;background-color:#f6f6f6;color:#3c3e40;}
+.comm_form th .required {position:absolute;top:12px;left:18px;}
+.comm_form td {padding:5px 0 5px 25px;color:#241815;font-size:13px;line-height:19px;vertical-align:middle;}
+.comm_form .f_text {position:relative;*height:18px;padding:10px;border:1px solid #dedede;font-size:15px;font-family:Tahoma,Dotum,'돋움',sans-serif;line-height:18px;vertical-align:middle;resize:none;}
+.comm_form .f_text {*font-family:Dotum,'돋움',sans-serif;}
+.comm_form .desc, .comm_form .item em {margin:3px;color:#a9b1b9;font-size:11px;line-height:17px;}
+.comm_form .desc a {color:#a9b1b9;}
+.comm_form span.desc {display:inline-block;*display:inline;zoom:1;padding-left:8px;}
+.comm_form .item {position:relative;display:inline-block;*display:inline;zoom:1;}
+/*.comm_form .item .f_text {padding-right:53px;}*/
+.comm_form .item em {position:absolute;bottom:15px;right:21px;background:#fff;}
+.comm_form .btnbox {display:inline-block;*display:inline;position:relative;width:88px;height:38px;line-height:36px;vertical-align:middle;text-align:center;border:1px solid #d6d6d6;cursor:pointer;*zoom:1;}
+.comm_form .f_check {width:13px;height:13px;margin:-1px 5px 1px 0;padding:0;vertical-align:middle;}
+.comm_form .agree {margin-top:21px;margin-bottom:36px;}
+.comm_form .agree dt {color:#3c3e40;font-weight:normal;font-size:15px;line-height:22px;letter-spacing:-0.05em;}
+.comm_form .agree dd {margin-top:13px;}
+.comm_form .agree .f_text {margin:0;color:#959494;font-size:11px;line-height:17px;}
+.comm_form .agree .desc {margin:13px 0 0;color:#241815;}
+.comm_form .ft {clear:both;float:none;width:100%;padding-top:40px;border-top:1px solid #ebebeb;text-align:center;}
+.comm_form .ft button {width:120px;height:50px;margin:0 3px;*margin:0 5px;font-size:15px;letter-spacing:-0.05em;}
+.comm_form .ft .btn_black {border:1px solid #3c3e40;background:#3c3e40;color:#fff;}
+.comm_form .ft .btn_white {border:1px solid #d6d6d6;background:#fff;color:#3c3e40;}
+.comm_form .required {color:#f33d33;}
+.comm_form .required_wrap .f_text {border:1px solid #f33d33;}
+.comm_form .required_wrap .desc {color:#f33d33;}
+.comm_form .rt_info {position:absolute;top:10px;right:0;font-size:11px;font-weight:normal;color:#3c3e40;}
+.comm_form .rt_info .star {position:relative;top:2px;font-size:13px;color:#ff4418;}
+.filebox {}
+.filebox .filename {display:inline-block;*display:inline;font-size:12px;color:#737475;*zoom:1;}
+.filebox input[type="file"] {position:absolute;top:0;left:0;opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";*filter:alpha(opacity=0);}
+.filebox .btnbox {font:15px/36px 'Apple SD Gothic Neo light','Apple SD Gothic Neo medium','Noto Sans','Noto Sans Bold','Roboto-Light','Roboto-Medium','Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif,sans-serif-light;color:#3c3e40;}
+.filebox .f_text {*height:auto;}
+.filelist_box {width:454px;overflow:hidden;margin-top:5px;padding:10px;border:1px solid #d6d6d6;font-size:12px;color:#737475;}
+.filelist_box p {display:inline-block;*display:inline;max-width:402px;margin-right:52px;vertical-align:middle;*zoom:1;}
+.filelist_box .file_del {overflow:hidden;width:15px;height:15px;margin-left:10px;border:1px solid #b7b7b7;text-indent:-9999px;color:rgba(0,0,0,0);vertical-align:middle;background:url("https://images.joins.com/ui_joongang/news/pc/service/b_del_xs.png") no-repeat center center;}
+
+.selecbox {position:relative;z-index:2;display:inline-block;*display:inline;width:101px;height:38px;line-height:36px;border:1px solid #d6d6d6;vertical-align:middle;background:url('https://images.joins.com/ui_joongang/news/pc/common/u_downarrow_s.png') 90% center no-repeat;*zoom:1;}
+.selecbox .btnbox {overflow:hidden;display:block;width:90%;height:100%;border:0 none;}
+.selecbox .btnbox a {display:block;width:100%;height:100%;padding:0 0 0 7px;text-align:left;font-size:15px;letter-spacing:-1px;white-space:nowrap;}
+.selecbox_mail .btnbox a {font-size:13px;}
+.selecbox .list {display:none;overflow-x:hidden;overflow-y:scroll;position:absolute;top:-1px;left:-1px;min-width:101px;*width:101px;height:194px;border:1px solid #d6d6d6;background:#fff;z-index:2;}
+.selecbox .list li {height:38px;line-height:38px;padding:0 5px;border-top:1px solid #d6d6d6;}
+.selecbox .list li a {display:block;}
+.selecbox .list li:first-child {border-top:0 none;}
+.selecbox_on .list {display:block;}
+.selecbox_phone {z-index:3;}
+
+/* 뉴스레터 신청하기 */
+.newsletter .frame{position:absolute;top:-1px;left:-1px;width:100%;height:100%;border:1px solid #959494;opacity:.5;-ms-filter:alpha(opacity=50);filter:alpha(opacity=50);z-index:-1;}
+.newsletter .bd{margin-bottom:30px;}
+.newsletter .writer_email em{display:block;margin-left:2px;color:#959494;font-size:11px;font-family:Tahoma,Dotum,'돋움',sans-serif;line-height:27px;}
+.newsletter .writer_email em{*font-family:Dotum,'돋움',sans-serif;}
+.newsletter .writer_email em span{color:#231f20;}
+.newsletter .writer_email dl{padding:20px 10px 20px 22px;background-color:#f6f6f6;overflow:hidden;}
+.newsletter .writer_email dt{float:left;width:58px;font-size:13px;font-weight:bold;line-height:40px;}
+.newsletter .writer_email .f_text{width:286px;height:40px;margin-right:10px;padding:0 19px;background-color:#fff;line-height:40px;font-size:15px;}
+.newsletter .writer_email .btn_white {display:inline-block;*display:inline;zoom:1;width:100px;height:40px;border:1px solid #d6d6d6;background:#fff;color:#3c3e40;font-size:13px;line-height:40px;letter-spacing:-0.05em;text-align:center;vertical-align:top;}
+.newsletter .ft{text-align:center;}
+.newsletter .ft button {width:120px;height:50px;margin:0 3px;*margin:0 5px;font-size:15px;letter-spacing:-0.05em;}
+.newsletter .ft .btn_black {border:1px solid #3c3e40;background:#3c3e40;color:#fff;}
+.newsletter .ft .btn_white {border:1px solid #d6d6d6;background:#fff;color:#3c3e40;}
+
+/*약관 동의*/
+.agree {margin-top:25px;margin-bottom:75px;}
+.agree dt {color:#3c3e40;font-weight:normal;font-size:15px;line-height:22px;letter-spacing:-0.05em;}
+.agree dd {margin-top:11px;text-align:center;}
+.agree .f_text {width:612px;margin:0;color:#959494;font-size:11px;line-height:17px;resize:none;}
+.agree .f_check {width:13px;height:13px;margin:-1px 5px 1px 0;padding:0;vertical-align:middle;}
+.agree .desc {margin:10px 0 0;color:#241815;}
+.agree .desc span{margin:0 18px;}
+.desc{margin:3px;color:#a9b1b9;font-size:11px;line-height:17px;font-family:Tahoma,Dotum,'돋움',sans-serif;}
+.desc{*font-family:Dotum,'돋움',sans-serif;}
+.agree .f_text {position:relative;*height:18px;margin:3px;*margin:2px 3px;padding:13px;border:1px solid #dedede;font-size:12px;line-height:18px;vertical-align:middle;margin:0;color:#959494;font-size:11px;line-height:17px;}
+.agree textarea.f_text{height:72px;}
+
+/* 타임7 뉴스레터/제보 */
+.jservice .hd{position:relative;margin-bottom:30px;}
+.jservice .hd h3,.jservice .hd .title{margin:0 0 12px -4px;padding-top:9px;color:#231f20;font-size:35px;font-weight:normal;letter-spacing:-2px;line-height:44px;} /* letter-spacing:-0.06em; */
+.jservice .hd .title h1{display:inline;}
+.jservice .hd p{margin-bottom:27px;color:#4c4c4c;font-size:15px;line-height:24px;letter-spacing:-0.05em;}
+.jservice .agree{margin-bottom:40px;}
+.jservice .agree dt,.jservice .agree dt em{font-weight:bold;}
+.jservice .agree dt em{color:#a79a5f;}
+.jservice .ft{text-align:center;}
+.jservice .ft button {width:120px;height:50px;margin:0 3px;*margin:0 5px;font-size:15px;letter-spacing:-0.05em;}
+.jservice .ft .btn_black {border:1px solid #3c3e40;background:#3c3e40;color:#fff;}
+.jservice .ft .btn_white {border:1px solid #d6d6d6;background:#fff;color:#3c3e40;}
+
+/* layer */
+.layer{display:none;position:fixed;left:0;top:0;right:0;bottom:0;z-index:500;}
+.layeron{display:block;}
+.layer .mask{position:fixed;left:0;top:0;background-color:#000;opacity:.2;-ms-filter:alpha(opacity=20);filter:alpha(opacity=20);}
+.layer .btn_close{display:block;position:absolute;right:0;top:0;width:55px;height:66px;background:url("https://images.joins.com/ui_joongang/news/pc/common/b_close_layer.png") no-repeat center center;text-indent:-9999px;}
+.layer h4{height:66px;padding-left:19px;border-bottom:1px solid #d6d6d6;color:#231f20;line-height:66px;font-size:15px;}
+.layer .newsletter{position:absolute;top:50%;left:50%;width:615px;height:559px;margin:-279px 0 0 -307px;border:1px solid #cac9c9;background-color:#fff;-webkit-box-shadow:4px 3px 6px rgba(0,0,0,.15);-moz-box-shadow:4px 3px 6px rgba(0,0,0,.15);box-shadow:4px 3px 6px rgba(0,0,0,.15);}
+.layer .newsletter .bd{padding:0 40px;}
+.layer .newsletter .agree textarea.f_text{width:510px;height:72px;}
+
+/* ad */
+.ad_120_200 {position:absolute;z-index:21;top:40px !important;left:-110px;width:120px;height:200px;overflow:hidden;}
+.ad_120_200 .bd {width:120px;height:200px;}
+.ad_120_200 iframe {display:block;border:none;}
+
+.ad_120_400 {position:absolute;z-index:21;top:354px;left:-130px;width:120px;height:400px;overflow:hidden;}
+.ad_120_400 .bd {width:120px;height:400px;}
+.ad_120_400 iframe {display:block;border:none;}
+
+.ad_120_600 {position:absolute;z-index:21;top:260px !important;left:-110px;width:120px;height:600px;overflow:hidden;}
+.ad_120_600 .bd {width:120px;height:600px;}
+.ad_120_600 iframe {display:block;border:none;}
+
+.ad_300_250 {position:absolute;z-index:21;top:667px;left:698px;width:300px;height:250px;overflow:hidden;}
+.ad_300_250 .bd {width:300px;height:250px;}
+.ad_300_250 iframe {display:block;border:none;}
+.ad_300_250 .ft button {display:block;position:absolute;top:0;right:0;width:23px;height:23px;background:url('https://images.joins.com/ui_joongang/news/pc/common/b_close_ad.png') 0 0 no-repeat;text-indent:-9999px;overflow:hidden;}
+
+.ad_728_90 {position:relative;width:728px;height:90px;margin:0 auto;padding:0 23px;overflow:hidden;}
+.ad_728_90 .bd {width:728px;height:90px;}
+.ad_728_90 iframe {display:block;border:none;}
+.ad_728_90 .ft button {display:block;position:absolute;bottom:0;right:0;width:23px;height:23px;background:url("https://images.joins.com/ui_joongang/news/pc/common/b_close_ad.png") 0 0 no-repeat;text-indent:-9999px;overflow:hidden;}
+
+.wide_banner {padding:20px;}
+
+#criteo_network {float:right;clear:both;width:250px;height:250px;margin-left:20px;margin-top:20px !important;margin-bottom:20px;}
+
+/* 3depth 부동산 */
+.gnb_depth03 {width:940px;margin:0 0 40px;padding:0 20px;border:1px solid #ebebeb;border-left:none;border-right:none;}
+.gnb_depth03 ul {zoom:1;}
+.gnb_depth03 ul:after {content:".";display:block;font-size:0;height:0px;line-height:0;clear:both;}
+.gnb_depth03 li {float:left;position:relative;height:50px;}
+.gnb_depth03 li a {display:block;padding:14px 0;color:#a9b1b9;font-weight:bold;font-size:15px;line-height:22px;letter-spacing:-0.05em;text-align:center;}
+.gnb_depth03 li.on a {color:#231f20;}
+.gnb_depth03 li .icon {display:block;position:absolute;top:20px;left:0;width:1px;height:10px;background:#ebebeb;}
+.gnb_depth03 li:first-child .icon {display:none;}
+.gnb_depth03 .col04 li {width:245px;}
+.gnb_depth03 .col05 li{width:188px !important;}
+
+.comm_iframe{background:none;overflow:hidden;}
+.comm_iframe .comm_form{margin-bottom:0;border:none;}
+.comm_iframe .filebox{margin-bottom:10px;overflow:hidden;}
+.comm_iframe .filebox .f_text{margin-right:-5px;*width:66px;}
+.comm_iframe .filebox a .btnbox{margin-left:5px;}
+
+/* sub_time7 */
+.sub_time7 {width:260px;padding:20px;border-top:1px solid #ececec;}
+.time7_newsroom, .time7_morning {position:relative;}
+.sub_time7 .ft a {display:block;position:absolute;z-index:3;top:0;right:0;bottom:0;left:0;width:100%;height:100%;background:url('https://images.joins.com/ui_joongang/news/pc/common/k_null.png') 0 0 repeat;text-indent:-9999px;overflow:hidden;}
+.sub_time7 .text_type {position:relative;width:230px;height:130px;padding:18px 15px 0;}
+.sub_time7 .text_type .photo {display:block;position:absolute;z-index:1;top:0;right:0;overflow:hidden;}
+.sub_time7 .text_type .txt_morning {display:inline-block;*display:inline;position:relative;z-index:2;padding:1px 5px 2px;color:#9a7607;font-size:11px;line-height:17px;zoom:1;}
+.sub_time7 .text_type .txt_morning .bx {position:absolute;top:0;right:0;bottom:0;left:0;border:1px solid #b89019;}
+.sub_time7 .text_type .txt_morning .bg {position:absolute;top:0;right:0;bottom:0;left:0;}
+.sub_time7 .text_type .txt_morning em {position:relative;z-index:2;}
+.sub_time7 .text_type .txt_newsroom {display:block;padding-top:8px;}
+.sub_time7 .text_type .txt_newsroom em {display:block;position:relative;z-index:2;width:117px;height:10px;background:url('https://images.joins.com/ui_joongang/news/pc/main/t_time7_newsroom.png') 0 0 no-repeat;text-indent:-9999px;overflow:hidden;}
+.sub_time7 .text_type .photo + .txt_newsroom {padding-top:0;}
+.sub_time7 .text_type .headline {display:block;position:relative;z-index:2;width:140px;max-height:48px;margin:4px 0 0;color:#241815;font-weight:bold;font-size:18px;line-height:24px;letter-spacing:-1px;overflow:hidden;}
+.sub_time7 .text_type .writer {display:block;position:absolute;z-index:2;left:15px;font-size:11px;line-height:17px;}
+.time7_newsroom .text_type {background:url('https://images.joins.com/ui_joongang/news/pc/main/k_time7_newsroom.png') 0 0 no-repeat #ffcc43;}
+.time7_morning .text_type {background:url('https://images.joins.com/ui_joongang/news/pc/main/k_time7_morning.png') 0 0 no-repeat #ffcc43;}
+.sub_time7 .time7_newsroom .text_type .writer {bottom:32px;color:#8b7d40;}
+.sub_time7 .time7_morning .text_type .writer {bottom:13px;color:#9a7607;}
+.sub_time7 .image_type {position:relative;width:260px;height:148px;}
+.sub_time7 .image_type .thumb {display:block;width:260px;height:148px;overflow:hidden;}
+.sub_time7 .image_type .thumb img {width:260px;height:148px;}
+.sub_time7 .image_type .thumb .shadow {background:url('https://images.joins.com/ui_joongang/news/pc/main/k_shadow_time7_morning.png') 0 0 no-repeat;}
+.sub_time7 .image_type .headline {display:block;position:absolute;z-index:2;right:10px;bottom:10px;left:10px;width:240px;max-height:48px;color:#fff;font-weight:bold;font-size:18px;line-height:24px;letter-spacing:-1px;overflow:hidden;}
+.sub_time7 .image_type .txt_morning {display:block;position:absolute;z-index:2;top:10px;left:10px;padding:1px 5px 2px;color:#fff;font-size:11px;line-height:17px;}
+.sub_time7 .image_type .txt_morning .bx {position:absolute;top:0;right:0;bottom:0;left:0;border:1px solid #fff;opacity:.7;-ms-filter:alpha(opacity=70);filter:alpha(opacity=70);}
+.sub_time7 .image_type .txt_morning .bg {position:absolute;top:0;right:0;bottom:0;left:0;background:#000;opacity:.2;-ms-filter:alpha(opacity=20);filter:alpha(opacity=20);}
+.sub_time7 .image_type .txt_morning em {position:relative;z-index:2;}
+
+/* 2016-07-19 innovation lab */
+.sub_innovation_lab {padding-top:12px;}
+.sub_innovation_lab h4 {color:#3c3e40;font-size:13px;}
+.sub_innovation_lab .bd {padding-top:10px;}
+.sub_innovation_lab .thumb {display:block;float:right;position:relative;width:120px;height:90px;margin-left:10px;}
+.sub_innovation_lab .thumb img {width:120px;height:90px;}
+.sub_innovation_lab .text_wrap {width:130px;height:90px;}
+.sub_innovation_lab .headline {display:block;max-height:60px;color:#241815;font-size:14px;line-height:20px;letter-spacing:-0.05em;overflow:hidden;}
+.sub_innovation_lab .headline a {color:#241815;}
+.sub_innovation_lab .byline {display:block;margin-top:3px;color:#a9b1b9;font-size:11px;line-height:15px;}
+.sub_innovation_lab .byline em {color:#a9b1b9;}
+.sub_innovation_lab .slick-dots {position:absolute;top:-26px;right:-2px;overflow:hidden;}
+.sub_innovation_lab .slick-dots li {float:left;height:14px;}
+.sub_innovation_lab .slick-dots button {display:block;width:13px;height:14px;background:url('https://images.joins.com/ui_joongang/news/pc/main/k_slick_dot.png') 50% 50% no-repeat;text-indent:-9999px;overflow:hidden;}
+.sub_innovation_lab .slick-dots .slick-active button {background:url('https://images.joins.com/ui_joongang/news/pc/main/k_slick_dot_active.png') 50% 50% no-repeat;}
+
+/* 2016-08-30 innovation lab */
+.sub_innov_lab {padding-top:12px;}
+.sub_innov_lab h4 {color:#5d81c3;font-size:13px;}
+.sub_innov_lab .bd {padding-top:10px;}
+.sub_innov_lab .thumb {display:block;float:right;position:relative;width:100px;height:70px;margin-left:10px;}
+.sub_innov_lab .thumb img {width:100px;height:70px;}
+.sub_innov_lab .text_wrap {width:150px;height:70px;}
+.sub_innov_lab .headline {display:block;max-height:37px;color:#241815;font-size:13px;line-height:18px;letter-spacing:-0.02em;overflow:hidden;}
+.sub_innov_lab .headline a {color:#241815;}
+.sub_innov_lab .byline {display:block;margin-top:6px;color:#a9b1b9;font-size:11px;line-height:15px;}
+.sub_innov_lab .byline em {color:#a9b1b9;}
+.sub_innov_lab .list_area{margin-top:10px;padding-top:6px;border-top:1px solid #f3f3f3;}
+.sub_innov_lab .list_area li{height:18px;margin-top:2px;color:#737574;font-size:12px;letter-spacing:-0.03em;line-height:18px;overflow:hidden;}
+.sub_innov_lab .list_area a{color:#737574;}
+.sub_innov_lab .slide_wrap .slick-prev,.sub_innov_lab .slide_wrap .slick-next {display:inline-block;*display:inline;zoom:1;position:absolute;top:-29px;width:20px;height:18px;margin:0;background-image:url('https://images.joins.com/ui_joongang/news/pc/main/b_slide_info.png');background-repeat:no-repeat;vertical-align:top;text-indent:-9999px;overflow:hidden;}
+.sub_innov_lab .slide_wrap .slick-prev {right:19px;background-position:0 0;}
+.sub_innov_lab .slide_wrap .slick-prev:hover {background-position:0 100%;}
+.sub_innov_lab .slide_wrap .slick-next {right:0;background-position:100% 0;}
+.sub_innov_lab .slide_wrap .slick-next:hover {background-position:100% 100%;}
+
+/*2017-02-21 임시 추가 */
+.sub_innov_lab_temp .thumb {float:left;width:122px;height:67px;margin:0 10px 0 0;}
+.sub_innov_lab_temp .thumb img {width:122px;height:67px;}
+
+/* 2017-04-20 Sponsored Contents */
+.sub_spon_cts {padding:11px 20px 17px 19px;}
+.sub_spon_cts h4 {font-size:13px;color:#5d81c3;}
+.sub_spon_cts .bd {}
+.sub_spon_cts .list_area{overflow:hidden;margin-top:12px;}
+.sub_spon_cts .list_area li{float:left;width:74px;height:auto;margin:0 0 0 19px;color:#737574;font-size:12px;letter-spacing:-0.03em;line-height:18px;overflow:hidden;}
+.sub_spon_cts .list_area li:first-child {margin:0;}
+.sub_spon_cts .list_area .thumb {position:relative;display:block;width:74px;height:36px;margin:0 0 3px 0;}
+.sub_spon_cts .list_area .thumb img {width:100%;height:100%;}
+.sub_spon_cts .list_area .text_wrap {display:block;text-align:center;line-height:14px;}
+.sub_spon_cts .list_area .headline {max-height:30px;font:normal 11px "돋움",dotum;}
+.sub_spon_cts .list_area .headline a {color:#737574;}
+
+/* K.시큐리티 - 광고 및 주요 배너 */
+.sub_ksecurity_bn li{width:260px;margin-top:10px;}
+.sub_ksecurity_bn li a{display:block;}
+.sub_ksecurity_bn li img{display:block;max-width:260px;overflow:hidden;}
+
+/* K.시큐리티 - 우측 poll영역 */
+.sub_poll {position:relative;padding-bottom:12px;border-top:1px solid #ebebeb;}
+.column_wrap .sub_poll .subtit_comm {padding-bottom:0;border-bottom:none;}
+.sub_poll dl {margin-top:13px;padding-left:20px;}
+.sub_poll dt {position:relative;margin-bottom:4px;}
+.sub_poll dt span {position:absolute;top:0;left:-19px;font-weight:bold;font-size:14px;line-height:18px;}
+.sub_poll dt strong {display:block;height:40px;overflow:hidden;font-weight:normal;font-size:13px;line-height:18px;color:#3c3e40;}
+.sub_poll dt em {display:block;color:#959494;font-size:11px;}
+.sub_poll dd {padding:3px 40px 0 0;}
+.sub_poll dd strong {display:block;margin-bottom:7px;color:#737475;font-weight:normal;font-size:12px;line-height:18px;}
+.sub_poll dd .bar_graph, .sub_poll dd .bar_graph .bar {display:inline-block;position:relative;height:10px;background-repeat:no-repeat;vertical-align:top;}
+.sub_poll dd .bar_graph {margin-right:2px;background-position:0 0;}
+.sub_poll dd .bar_graph .bar {width:100%;left:2px;background-position:100% -10px;}
+.sub_poll dd .bar_graph em {position:absolute;top:-4px;*top:-5px;right:-40px;width:36px;font-weight:bold;font-size:13px;line-height:18px;}
+:root .sub_poll dd .bar_graph em {top:-5px\0/IE9;}
+.sub_poll dd.answer01 .bar_graph, .sub_poll dd.answer01 .bar_graph .bar {background-image:url(https://images.joins.com/ui_joongang/news/pc/article/k_sub_poll01.gif);}
+.sub_poll dd.answer02 .bar_graph, .sub_poll dd.answer02 .bar_graph .bar {background-image:url(https://images.joins.com/ui_joongang/news/pc/article/k_sub_poll02.gif);}
+.sub_poll dd.answer01 .bar_graph em {color:#e9aa00;}
+.sub_poll dd.answer02 .bar_graph em {color:#5d81c3;}
+.sub_poll dd.more {margin-top:-5px;font-size:11px;line-height:17px;}
+.sub_poll dd.more a {color:#5d81c3;}
+.sub_poll .add {top:12px;}
+
+/* showt */
+.showt-xd-iframe {top:0;}
+
+/* 2016-12-21 이슈영역 관련 개선 */
+.sub_issue_v2 .bd li {width:105px;height:105px;padding:20px 10px 0;}
+.sub_issue_v2 .hash_tag {position:relative;top:auto;left:auto;max-width:95px;}
+.sub_issue_v2 .hash_tag a {max-width:85px;}
+.sub_issue_v2 .bd li .headline {display:block;position:static;right:auto;bottom:auto;left:auto;margin-top:5px;font-weight:bold;font-size:13px;line-height:18px;letter-spacing:-0.05em;}
+.sub_issue_v2 .bd li .headline a {color:#3c3427;}
+.sub_issue_v2 .banner_color01 {background:#ccad7d;}
+.sub_issue_v2 .banner_color02 {background:#7bb9b1;}
+.sub_issue_v2 .banner_color03 {background:#8ba7cd;}
+.sub_issue_v2 .banner_color04 {background:#dcac9e;}
+
+/* 2017-02-03 시민마이크 */
+.sub_peoplemic {padding-top:15px;padding-bottom:17px;}
+.sub_peoplemic p {margin-top:13px;color:#7da1ff;font-size:14px;}
+.sub_peoplemic ul {margin-top:13px;}
+.sub_peoplemic li {margin-top:14px;color:#737475;font-size:11px;}
+.sub_peoplemic li:first-child {margin-top:0;}
+.sub_peoplemic li strong {display:block;margin-bottom:6px;font-weight:normal;font-size:14px;}
+.sub_peoplemic li a {color:#241815;}
+.sub_peoplemic li em {color:#7da1ff;}
+.sub_peoplemic .add {top:17px;}
+
+/* 2017-02-03 리셋코리아 분과 위원회 */
+.list_resetkorea {margin-bottom:42px;}
+.list_resetkorea h3 {color:#221815;font-weight:bold;font-size:21px;line-height:33px;letter-spacing:-0.07em;}
+.list_resetkorea dl {margin-top:16px;padding:23px 28px 27px;border:1px solid #e4e4e4;background:#f5f5f5;}
+.list_resetkorea dt {margin-bottom:21px;color:#241815;font-size:18px;}
+.list_resetkorea dd {color:#989fa6;font-size:13px;line-height:21px;}
+.list_resetkorea p {margin-top:15px;color:#737475;font-size:12px;line-height:22px;}
+.list_resetkorea ul {margin-top:35px;padding-top:10px;padding-bottom:40px;border-top:1px solid #ebebeb;border-bottom:1px solid #ebebeb;font-size:0;letter-spacing:-5px;overflow:hidden;}
+.list_resetkorea li {display:inline-block;position:relative;width:160px;margin-top:20px;color:#fff;font-size:12px;letter-spacing:0;line-height:1.5;vertical-align:top;*display:inline;zoom:1}
+.list_resetkorea li .icon {display:block;position:absolute;top:-2px;left:26px;z-index:2;width:19px;height:19px;background:url('https://images.joins.com/ui_joongang/news/pc/list/k_badge_resetkorea.png') 0 0 no-repeat;overflow:hidden;}
+.list_resetkorea .profile {width:160px;}
+.list_resetkorea .profile .photo {float:left;width:40px;height:40px;margin:0 8px 0 0;}
+.list_resetkorea .profile .photo img {width:40px;min-height:40px;}
+.list_resetkorea .profile .frame {background:url('https://images.joins.com/ui_joongang/news/pc/search/k_frame40.png') 0 0 no-repeat;}
+.list_resetkorea .profile strong {margin-top:0;margin-left:50px;color:#231f20;font-size:13px;line-height:1.5;letter-spacing:-0.05em;text-align:left;}
+.list_resetkorea .profile em {margin-top:2px;margin-left:50px;color:#7e7e7e;line-height:1.5;text-align:left;}
+
+/* 2017-05-11 공통 우측 마진조정건 */
+.rts {padding-top:15px;}
+.rts .add {top:17px;}
+.rts.sub_da_300 {padding-top:0;}
+.rts.sub_da_300 iframe {display:block;}
+.rts.sub_series .ad_text {margin-top:8px;margin-bottom:1px;padding-top:0;padding-bottom:0;}
+.rts.sub_article {padding-bottom:17px;}
+.rts.sub_datxt {padding-top:18px;padding-bottom:13px;}
+.rts.sub_innov_lab {padding-top:16px;padding-bottom:18px;}
+.rts.sub_photo .ft {top:16px;}
+.rts.sub_da_250 {padding-top:20px;height:250px;}
+.rts.sub_da_250 iframe {display:block;}
+.rts.sub_imc {padding-top:0;}
+.rts.sub_jplus {padding-bottom:14px;}
+.rts.sub_jplus .bd {margin-top:6px;}
+.rts.sub_premium_link {padding-top:20px;padding-bottom:16px;}
+.rts.biz_link {padding-top:20px;padding-bottom:15px;}
+.rts.popular_link {padding-top:20px;padding-bottom:9px;}
+.rts.sponsored_link {padding-top:20px;padding-bottom:11px;}
+.rts.special_link {padding-top:20px;padding-bottom:8px;}
+.rts.hotissue_link {padding-top:20px;padding-bottom:16px;}
+.rts.premium_link {padding-top:20px;padding-bottom:6px;}
+.rts.sub_article .bd {padding-top:10px;}
+.rts.sub_innov_lab .bd {padding-top:9px;}
+.rts.sub_site .bd {margin-top:12px;}
+.rts.sub_week .bd {margin-top:14px;}
+.rts.sub_recommend_series .bd {margin-top:6px;}
+.rts.sub_talk_nk .bd {padding-top:11px;}
+.rts.sub_retire .bd {margin-top:7px;}
+.rts.sub_recommend_series .btn_wrap {top:17px;}
+.rts.sub_poll dl {margin-top:14px;}
+
+/* 2017-06-21 우얄라 OVP 중앙정렬 */
+.ovp_player .player_area .oo-player-container {margin:0 auto;}
+
+/* 2017-09-01 스타기자 연재기사 구독하기 */
+.layer_star_subscribe {position:absolute;top:50%;left:50%;width:700px;height:492px;margin:-246px 0 0 -350px;background-color:#fff;}
+.layer_star_subscribe h4 {height:67px;padding-left:30px;color:#3e3d3a;font-size:18px;line-height:65px;letter-spacing:-0.05em;}
+.layer_star_subscribe .bd {padding:0 60px;}
+.layer_star_subscribe .bd p {margin-top:33px;color:#3e3d3a;font-size:16px;line-height:26px;letter-spacing:-0.05em;}
+.layer_star_subscribe .email {margin-top:26px;padding:20px;border:1px solid #e0e0e0;background:#f6f6f6;overflow:hidden;}
+.layer_star_subscribe .email dt {float:left;width:60px;color:#3c3e40;font-size:13px;line-height:40px;}
+.layer_star_subscribe .email dd {float:left;}
+.layer_star_subscribe .email dd input {width:318px;height:40px;padding:0 20px;background:#fff;color:#3c3e40;font-size:15px;line-height:40px;}
+.layer_star_subscribe .email dd button {width:120px;background:#ffa517;color:#fff;font-size:15px;line-height:40px;letter-spacing:-0.05em;}
+.layer_star_subscribe .policy {margin-top:30px;}
+.layer_star_subscribe .policy dt {padding:0 15px;border:1px solid #e0e0e0;background:#f6f6f6;}
+.layer_star_subscribe .policy dt label {display:inline-block;height:38px;color:#3e3d3a;font-size:16px;line-height:36px;letter-spacing:-0.05em;}
+.layer_star_subscribe .policy dt em {color:#ffa517;}
+.layer_star_subscribe .policy dt input {position:relative;left:0;opacity:0;filter:alpha(opacity=0);}
+.layer_star_subscribe .policy dt label {margin-left:-17px;color:#000;}
+.layer_star_subscribe .policy dt label:before {content:'';display:inline-block;width:21px;height:21px;margin-right:10px;background:url('https://images.joins.com/ui_joongang/news/pc/star/u_subscribe.png') 0 0 no-repeat;vertical-align:middle;}
+.layer_star_subscribe .policy dt label.checked:before {background-position:0 -21px;}
+.layer_star_subscribe .policy dd textarea {width:538px;margin-top:-1px;padding:15px 20px 5px;border:1px solid #e0e0e0;color:#78756f;font-size:12px;line-height:20px;overflow-y:auto;}
+.layer_star_subscribe .btn_close {width:75px;height:67px;}
+.layer_star_subscribe .policy dt label:before {width:22px;}
+.layer_star_subscribe .policy dt label.checked:before {height:22px;background:url('https://images.joins.com/ui_joongang/news/pc/star/u_subscribe_v2.png') 0 0 no-repeat;background-position:0 -22px;}
+.layer_star_subscribe .step01 .noti{display:block;margin-top:3px;color:#f33d33;font-size:13px;}
+.layer_star_subscribe .step01 .recaptcha{margin-top:26px;text-align:center;}
+
+.military_request{width:239px;height:136px;margin:20px 0 0 20px;padding:14px 0 0 20px;background:url('https://images.joins.com/ui_joongang/news/pc/list/k_military.jpg') 0 0 no-repeat;color:#fff;}
+.military_request dl{padding-right:10px;}
+.military_request dt{margin-bottom:9px;font-size:15px;font-weight:bold;}
+.military_request dd{font-size:13px;}
+.military_request dd a{display:block;width:36px;height:21px;margin-top:12px;padding:0 12px;border:1px solid rgba(255,255,255,0.5);border-radius:23px;color:rgba(255,255,255,0.7);letter-spacing:-1px;line-height:20px;font-size:12px;text-decoration:none;*zoom:1;}
+
+/* 2017-12-04 */
+.modal_popup {width:100%;height:100%;text-align:center;}
+.popup_content {display:inline-block;position:relative;top:auto;left:auto;height:auto;margin:0;text-align:left;vertical-align:middle;overflow:hidden;}
+.popup_blank {display:inline-block;width:0;height:100%;vertical-align:middle;}
+.layer_star_subscribe .step01,
+.layer_star_subscribe .step02 {padding-bottom:30px;}
+.layer_star_subscribe .step01 p strong,
+.layer_star_subscribe .step02 p strong {color:#ff8417;font-weight:normal;}
+.layer_star_subscribe .step01 .policy dd textarea {vertical-align:top;}
+.layer_star_subscribe .step02 p {font-size:18px;line-height:30px;text-align:center;}
+.layer_star_subscribe .select {position:relative;width:702px;margin:30px -60px 0;border-top:10px solid #eee;overflow:hidden;}
+.layer_star_subscribe .select h5 {display:block;padding:19px 10px 12px 30px;border-bottom:2px solid #d2d2d2;color:#3e3d3a;font-weight:normal;font-size:16px;}
+.layer_star_subscribe .select .all_check {position:absolute;top:23px;right:30px;color:#3e3d3a;font-weight:bold;font-size:13px;cursor:pointer;}
+.layer_star_subscribe .select input {position:absolute;top:0;left:0;opacity:0;filter:alpha(opacity=0);}
+.layer_star_subscribe .select label:before {content:'';display:inline-block;width:22px;height:22px;margin:-1px 0 1px;background:url('https://images.joins.com/ui_joongang/news/pc/star/u_subscribe_v2.png') 0 0 no-repeat;vertical-align:middle;}
+.layer_star_subscribe .select label.checked:before {background-position:0 -22px;}
+.layer_star_subscribe .select ul {max-height:250px;overflow-x:hidden;overflow-y:auto;}
+.layer_star_subscribe .select li {float:left;position:relative;width:33.3333%;height:49px;margin-right:-1px;border-right:1px solid #eee;border-bottom:1px solid #eee;}
+.layer_star_subscribe .select li label {display:block;height:49px;line-height:49px;padding-left:30px;cursor:pointer;}
+.layer_star_subscribe .select li input {top:50%;right:21px;left:auto;}
+.layer_star_subscribe .select li label:before {position:absolute;z-index:2;top:50%;right:21px;margin:-11px 0 0;}
+.layer_star_subscribe .select li label img {position:relative;z-index:2;height:21px;}
+.layer_star_subscribe .select li label:after {content:'';display:block;position:absolute;top:0;right:0;bottom:0;left:1px;background:#fff;}
+.layer_star_subscribe .select li label.checked:after {background:#f2f2f2;}
+.layer_star_subscribe .select button {display:block;width:190px;height:40px;margin:30px auto 0;background:#ffa517;color:#fff;font-size:15px;line-height:40px;text-align:center;overflow:hidden;}
+.layer_jpod_subscribe .step01{padding-bottom:60px;}
+.layer_jpod_subscribe .step01 p strong,.layer_jpod_subscribe .step02 p strong,.layer_jpod_subscribe .policy dt em{color:#6a48d6;}
+.layer_jpod_subscribe .step01 p strong,.layer_jpod_subscribe .step02 p strong{font-weight:bold;}
+.layer_jpod_subscribe .email dd button{background:#6948d5;}
+.layer_jpod_subscribe .policy dt label:before {width:22px;}
+.layer_jpod_subscribe .policy dt label.checked:before {height:22px;background:url('https://images.joins.com/ui_joongang/news/pc/jpod/k_jpod_subs.png') 0 0 no-repeat;}
+.layer_jpod_subscribe .channel {position:relative;width:702px;margin:30px -60px 0;border-top:10px solid #eee;overflow:hidden;}
+.layer_jpod_subscribe .channel h5 {display:block;padding:19px 10px 12px 30px;color:#3e3d3a;font-weight:normal;font-size:16px;}
+.layer_jpod_subscribe .channel ul{margin:4px 30px 0;}
+.layer_jpod_subscribe .channel li{margin-top:10px;}
+.layer_jpod_subscribe .jpod{position:relative;height:80px;margin:0;padding:0 0 0 99px;background:url('https://images.joins.com/ui_joongang/news/pc/jpod/k_jpod_subs.png') 100% -23px no-repeat;}
+.layer_jpod_subscribe .jpod .thumb,.layer_jpod_subscribe .jpod .thumb img{width:80px;height:80px;} 
+.layer_jpod_subscribe .jpod .thumb{position:absolute;left:0;top:0;}
+.layer_jpod_subscribe .jpod p{margin:0;padding:7px 0 0;text-align:left;}
+.layer_jpod_subscribe .jpod em{display:block;color:#231f20;font-size:17px;font-weight:bold;}
+.layer_jpod_subscribe .jpod a{display:block;}
+.layer_jpod_subscribe .step02 .jpod strong{color:#231f20;font-size:21px;font-weight:normal;}
+.layer_jpod_subscribe .step02 .jpod p{padding:0;line-height:normal;}
+.layer_jpod_subscribe .jpod em{font-size:16px;}
+.layer_jpod_subscribe .step02 .jpod strong{display:block;margin-top:7px;padding-right:50px;font-size:18px;line-height:26px;}
+.layer_jpod_subscribe .jpod .text_wrap{height:80px;}
+
+/* 2018-01-31 태그 뉴스 */
+.sub_tagnews {width:260px;}
+.sub_tagnews .bd {margin-top:18px;}
+.sub_tagnews ul {margin:-10px 0 0 -10px;}
+.sub_tagnews li {float:left;width:125px;height:122px;margin:10px 0 0 10px;}
+.sub_tagnews li a {display:block;position:relative;width:125px;height:122px;text-decoration:none;cursor:pointer;overflow:hidden;}
+.sub_tagnews img {display:block;position:absolute;top:0;left:0;width:125px;height:122px;-webkit-transition:all .2s;-o-transition:all .2s;transition:all .2s;}
+.sub_tagnews .shadow {background:#02081a;opacity:.5;-ms-filter:alpha(opacity=50);filter:alpha(opacity=50);}
+.sub_tagnews .text_wrap {position:relative;width:125px;height:122px;}
+.sub_tagnews .text_center {position:relative;}
+.sub_tagnews strong {display:block;max-height:63px;padding:0 10px;color:#fff;font-size:15px;line-height:21px;letter-spacing:-0.05em;text-align:center;overflow:hidden;opacity:1;-ms-filter:alpha(opacity=100);filter:alpha(opacity=100);}
+.sub_tagnews a:hover img {-webkit-transform: scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1); }
+.sub_tagnews a:hover .shadow {opacity:.6;-ms-filter:alpha(opacity=60);filter:alpha(opacity=60);}
+
+/* 2018-03-23 */
+.sub_branded_contents {padding-top:16px;padding-bottom:17px;}
+.sub_branded_contents .hd {color:#5d81c3;font-size:13px;}
+.sub_branded_contents .bd {position:relative;margin-top:-21px;padding-top:30px;overflow:hidden;}
+.sub_branded_contents .slide_wrap {width:276px;margin-left:-16px;}
+.sub_branded_contents .slide {width:122px;padding-left:16px;}
+.sub_branded_contents .slide a {display:block;color:#737574;}
+.sub_branded_contents .slide img {display:block;width:122px;height:56px;}
+.sub_branded_contents .slide strong {display:block;margin-top:3px;color:#737574;font-weight:normal;font-size:11px;letter-spacing:-0.02em;text-align:center;text-overflow:ellipsis;white-space:nowrap;word-break:normal;word-wrap:normal;overflow:hidden;}
+.sub_branded_contents .slick-prev,.sub_branded_contents .slick-next {display:inline-block;*display:inline;zoom:1;position:absolute;top:-30px;width:20px;height:18px;margin:0;background-image:url('https://images.joins.com/ui_joongang/news/pc/main/b_slide_info.png');background-repeat:no-repeat;vertical-align:top;text-indent:-9999px;overflow:hidden;}
+.sub_branded_contents .slick-prev {right:19px;background-position:0 0;}
+.sub_branded_contents .slick-prev:hover {background-position:0 100%;}
+.sub_branded_contents .slick-next {right:0;background-position:100% 0;}
+.sub_branded_contents .slick-next:hover {background-position:100% 100%;}
+
+/* 2018-04-11 */
+.subtitle_area {padding-bottom:20px;}
+.subtitle_area .add {top:6px;}
+
+.sub_series .label_01 {display:inline;color:#f33d33;margin-right:6px;vertical-align:baseline;}
+.sub_series .label_02 {display:inline;color:#eaaa00;margin-right:6px;vertical-align:baseline;}
+.sub_series .label_03 {display:inline;color:#a69885;margin-right:6px;vertical-align:baseline;}
+
+.list_sectionhome{padding-bottom:10px;border-bottom:1px solid #E6E6E6;}
+.list_sectionhome .type_b li{padding:0 0 29px;border-bottom:none;}
+.list_sectionhome .type_b .thumb{width:200px;height:133px;margin-top:0;}
+.list_sectionhome .type_b .thumb img{min-height:133px;}
+.list_sectionhome .type_b .lead{max-height:41px;font-size:13px;line-height:20px;}
+.list_sectionhome .type_b .lead a{color:#2E2A26;}
+.list_sectionhome .type_b .byline{margin-top:6px;color:#8D8D8D;font-size:12px;}
+
+.list_sectionhome .type_b .lead,.list_sectionhome .type_b .byline,.title_section .subtitle,.list_sectionhome .type_b .headline{font-family:'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','Noto Sans',Dotum,'돋움',sans-serif;}
+.title_section{margin-bottom:20px;}
+.title_section .subtitle,.rta .subtit_comm{font:0/0 a  !important;background-image:url('https://images.joins.com/ui_joongang/news/pc/common/t_section.png');background-repeat:no-repeat;background-size:150px auto;color:transparent;}
+.title_section .subtitle{width:79px;height:21px;background-position:0 -113px;}
+.sub_trend .subtit_comm{width:131px;height:29px;background-position:0 -35px;}
+.sub_digital .subtit_comm{width:149px;height:29px;background-position:0 7px;}
+
+/* 2019-08-20 */
+/*.ad_120_200::before,
+.ad_120_600.ad_120_left::before{content:'';position:absolute;z-index:2;top:0;left:0;width:100%;height:1px;background:rgba(0,0,0,.08);}
+.ad_120_200::after,
+.ad_120_600.ad_120_left::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:1px;background:rgba(0,0,0,.08);}
+.ad_120_200 .bd,
+.ad_120_600.ad_120_left .bd{position:relative;}
+.ad_120_200 .bd::before,
+.ad_120_600.ad_120_left .bd::before{content:'';position:absolute;top:0;left:0;width:1px;height:100%;background:rgba(0,0,0,.08);}
+.ad_120_200 .bd::after,
+.ad_120_600.ad_120_left .bd::after{content:'';position:absolute;top:0;right:0;width:1px;height:100%;background:rgba(0,0,0,.08);}*/
+
+/* 2019-08-21 */
+.sub_photo_v2 .slide_list {height:auto;}
+.sub_photo_v2 .slide_list .thumb,
+.sub_photo_v2 .slide_list .thumb img {height:170px;}
+.sub_photo_v2 .btn-prev,
+.sub_photo_v2 .btn-next {top:72px;margin-top:0;}
+.sub_photo_v2 .slide_list .headline {position:static;right:auto;bottom:auto;left:auto;margin-top:3px;height:40px;color:#000;line-height:20px;text-align:left;}
+.sub_photo_v2 .slide_list .headline a {color:#000;}
+
+.correction_news{margin-bottom:37px;padding:6px 10px 7px;background:#F5F5F5;color:#2E2A26;line-height:22px;font-size:13px;}
+.correction_news strong{margin-right:14px;}
+.correction_news a{color:#2E2A26;}

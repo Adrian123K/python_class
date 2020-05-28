@@ -1,0 +1,67 @@
+
+■  웹스크롤링한 텍스트 데이터를 워드 클라우드로 시각화 하기
+
+1. 아나콘다 프롬프트 창을 열고  wordcloud 패키지 설치
+
+conda  install  wordcloud
+ 
+   또는 
+
+pip  install   wordcloud
+
+2. c 드라이브 밑에 project 폴더를 생성 
+
+3. project 폴더 밑에  4가지 파일을 둡니다.
+
+   -  usa_im.png
+   -  s_korea.png
+   -  word.txt
+   -  어제 스크롤링했던 기사 파일 my_text15.txt 
+
+
+# 텍스트마이닝 데이터 정제
+
+from wordcloud import WordCloud, STOPWORDS
+import matplotlib.pyplot as plt  # 그래프 그리는 모듈
+from os import path     #  os 에 있는 파일을 파이썬에서 인식하기 위해서
+import re   #  데이터 정제를 위해서 필요한 모듈 
+import numpy as np  
+from PIL import Image  # 이미지 시각화를 위한 모듈 
+
+# 워드 클라우드의 배경이 되는 이미지 모양을 결정
+usa_mask = np.array(Image.open("c:/project/usa_im.png"))
+
+# 워드 클라우드를 그릴 스크립트 이름을 물어봅니다. 
+script = input( 'input file name : ')
+
+# 워드 클라우드 그림이 저장될 작업 디렉토리를 설정 
+d = path.dirname("c:/project/")
+
+# 기사 스크립트와 os 의 위치를 연결하여 utf8로 인코딩해서 한글 텍스트를
+# text 변수로 리턴한다.
+text = open(path.join(d, "%s"%script), mode="r", encoding="utf-8").read()
+
+# 파이썬이 인식할 수 있는 한글 단어의 갯수를 늘리기 위한 작업 
+file = open('c:/project/word.txt', 'r', encoding = 'utf-8')
+word = file.read().split(' ')
+for i in word:
+    text = re.sub(i,'',text)
+
+# 워드 클라우드를 그린다. 
+wordcloud = WordCloud(font_path='C://Windows//Fonts//gulim', # 글씨체
+                      stopwords=STOPWORDS,   # 마침표, 느낌표,싱글 쿼테이션 등을 정제
+                      max_words=1000, # 워드 클라우드에 그릴 최대 단어갯수
+                      background_color='white', # 배경색깔
+                      max_font_size = 100, # 최대 글씨 크기 
+                      min_font_size = 1, # 최소 글씨 
+                      mask = usa_mask, # 배경 모양 
+                      colormap='jet').generate(text).to_file('c:/project/cnn_cloud.png')
+                  # c 드라이브 밑에 project 폴더 밑에 생성되는 워드 클라우드 이미지 이름
+  
+plt.figure(figsize=(15,15)) 
+plt.imshow(wordcloud, interpolation='bilinear')  # 글씨가 퍼지는 스타일 
+plt.axis("off")
+plt.show()
+
+text.close()
+file.close()

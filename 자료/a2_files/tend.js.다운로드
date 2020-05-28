@@ -1,0 +1,941 @@
+/* IE 콘솔  ver 2.2.0 */
+if(typeof(window.console) == 'undefined') {console = { log: function () { } }; }
+var foin_where_ref = [
+"m.dcinside.com",
+"heymr.co.kr"
+];
+var foin_domainCutInfo=[
+{domain:"www.sedaily.com",split:"?",where:"left"}
+,{domain:"www.ajunews.com",split:"?",where:"left"}
+,{domain:"ppss.kr",split:"?",where:"left"}
+,{domain:"news.joins.com",split:"?",where:"left"}
+,{domain:"mnews.joins.com",split:"?",where:"left"}
+,{domain:"m.ytn.co.kr",split:"key",where:"right"}
+,{domain:"m.yna.co.kr",split:"?",where:"left"}
+,{domain:"m.huffingtonpost.kr",split:"?",where:"left"}
+,{domain:"dcnewsj.joins.com",split:"?",where:"left"}
+,{domain:"www.zdnet.co.kr",split:"artice_id",where:"right"}
+,{domain:"www.wikitree.co.kr",split:"id",where:"right"}
+,{domain:"www.whitepaper.co.kr",split:"idxno",where:"right"}
+,{domain:"www.vop.co.kr",split:"?",where:"left"}
+,{domain:"www.topstarnews.net",split:"idxno",where:"right"}
+,{domain:"www.seoul.co.kr",split:"id",where:"right"}
+,{domain:"www.pressian.com",split:"no",where:"right"}
+,{domain:"www.nocutnews.co.kr",split:"_",where:"left"}
+,{domain:"www.newsworks.co.kr",split:"idxno",where:"right"}
+,{domain:"www.newstown.co.kr",split:"idxno",where:"right"}
+,{domain:"www.newsis.com",split:"id",where:"right"}
+,{domain:"m.biz.khan.co.kr",split:"artid",where:"right"}
+,{domain:"biz.khan.co.kr",split:"artid",where:"right"}
+,{domain:"m.businesspost.co.kr",split:"num",where:"right"}
+,{domain:"m.chosun.com",split:"contid",where:"right"}
+,{domain:"m.dailiang.co.kr",split:"idxno",where:"right"}
+,{domain:"m.etoday.co.kr",split:"idxno",where:"right"}
+,{domain:"m.fnnews.com",split:"?",where:"left"}
+,{domain:"m.hankooki.com",split:"FILE_NO",where:"right"}
+,{domain:"m.ichannela.com",split:"publishId",where:"right"}
+,{domain:"m.idomin.com",split:"idxno",where:"right"}
+,{domain:"m.ilyo.co.kr",split:"entry_id",where:"right"}
+,{domain:"m.jeollailbo.com",split:"idxno",where:"right"}
+,{domain:"m.joongboo.com",split:"idxno",where:"right"}
+,{domain:"m.kihoilbo.co.kr",split:"idxno",where:"right"}
+,{domain:"m.mediaus.co.kr",split:"idxno",where:"right"}
+,{domain:"m.mk.co.kr",split:"?",where:"left"}
+,{domain:"m.moneys.mt.co.kr",split:"no",where:"right"}
+,{domain:"m.mt.co.kr",split:"no",where:"right"}
+,{domain:"m.myfocus.co.kr",split:"no",where:"right"}
+,{domain:"m.newsway.co.kr",split:"ud",where:"right"}
+,{domain:"m.ohmynews.com",split:"CNTN_CD",where:"right"}
+,{domain:"m.pressian.com",split:"no",where:"right"}
+,{domain:"m.segye.com",split:"?",where:"left"}
+,{domain:"m.seoul.co.kr",split:"id",where:"right"}
+,{domain:"m.sports.khan.co.kr",split:"art_id",where:"right"}
+,{domain:"m.sportschosun.com",split:"ServiceDate",where:"right"}
+,{domain:"m.theleader.mt.co.kr",split:"no",where:"right"}
+,{domain:"mobile.newsis.com",split:"ar_id",where:"right"}			
+,{domain:"moneys.mt.co.kr",split:"no",where:"right"}		
+,{domain:"news.donga.com",split:"?",where:"left"}		
+,{domain:"news.hankyung.com",split:"?",where:"left"}		
+,{domain:"news.heraldcorp.com",split:"ud",where:"right"}		
+,{domain:"news.khan.co.kr",split:"artid",where:"right"}		
+,{domain:"news.khan.co.kr",split:"code",where:"right"}		
+,{domain:"news.mk.co.kr",split:"no",where:"right"}		
+,{domain:"news.mt.co.kr",split:"no",where:"right"}		
+,{domain:"nnews.mk.co.kr",split:"sc",where:"right"}		
+,{domain:"nownews.seoul.co.kr",split:"id",where:"right"}		
+,{domain:"sports.khan.co.kr",split:"art_id",where:"right"}	
+,{domain:"star.ohmynews.com",split:"CNTN_CD",where:"right"}	
+,{domain:"www.asiatoday.co.kr",split:"key",where:"right"}	
+,{domain:"www.bestfeed.co.kr",split:"type",where:"right"}	
+,{domain:"www.dailian.co.k",split:"?",where:"left"}	
+,{domain:"www.ebn.co.kr",split:"?",where:"left"}	
+,{domain:"www.edaily.co.kr",split:"mediaCodeNo",where:"right"}	
+,{domain:"www.etnews.com",split:"?",where:"left"}	
+,{domain:"www.g-enews.com",split:"ud",where:"right"}	
+,{domain:"www.newsis.com",split:"id",where:"right"}	
+,{domain:"www.pressian.com",split:"no",where:"right"}	
+,{domain:"www.seoul.co.krid",split:"id",where:"right"}	
+,{domain:"www.topstarnews.net",split:"idxno",where:"right"}	
+,{domain:"www.yonhapnews.co.kr",split:"?",where:"left"}	
+,{domain:"www.yonhapnews.co.kr",split:"?",where:"left"}	
+,{domain:"www.zdnet.co.kr",split:"artice_id",where:"right"}	
+,{domain:"dcnewsj.joins.com",split:"?",where:"left"}	
+,{domain:"m.yna.co.kr",split:"?",where:"left"}	
+,{domain:"mnews.joins.com",split:"?",where:"left"}	
+,{domain:"www.sedaily.com",split:"?",where:"left"}	
+,{domain:"biz.chosun.com",split:"?",where:"left"}	
+,{domain:"biz.heraldcorp.com",split:"ud",where:"right"}	
+,{domain:"cwstoo.asiae.co.kr",split:"idxno",where:"right"}	
+,{domain:"dailypick.kr",split:"?",where:"left"}	
+,{domain:"dripzil.com",split:"wr_id",where:"right"}	
+,{domain:"en.seoul.co.kr",split:"id",where:"right"}	
+,{domain:"etoland.co.kr",split:"wr_id",where:"right"}	
+,{domain:"flash24.dreamx.com",split:"wr_id",where:"right"}	
+,{domain:"iliking.co.kr",split:"?",where:"left"}	
+,{domain:"koreajoongangdaily.joins.com",split:"aid",where:"right"}	
+,{domain:"m.asiatoday.co.kr",split:"key",where:"right"}	
+,{domain:"m.chosun.com",split:"contid",where:"right"}	
+,{domain:"m.busan.com",split:"newsId",where:"right"}
+,{domain:"m.daejeontoday.com",split:"idxno",where:"right"}
+,{domain:"m.dailygrid.net",split:"idxno",where:"right"}
+,{domain:"m.datanet.co.kr",split:"idxno",where:"right"}
+,{domain:"m.ebn.co.kr",split:"?",where:"left"}
+,{domain:"m.ecomedia.co.kr",split:"ncode",where:"right"}
+,{domain:"m.economytalk.kr",split:"idxno",where:"right"}
+,{domain:"m.ekn.kr",split:"no",where:"right"}
+,{domain:"m.electimes.com",split:"aid",where:"right"}
+,{domain:"m.getnews.co.kr",split:"ud",where:"right"}
+,{domain:"m.greened.kr",split:"idxno",where:"right"}
+,{domain:"m.gukjenews.com",split:"idxno",where:"right"}
+,{domain:"m.gwangnam.co.kr",split:"aid",where:"right"}
+,{domain:"m.gyotongn.com",split:"idxno",where:"right"}
+,{domain:"m.hankooki.com",split:"WEB_GSNO",where:"right"}
+,{domain:"m.heraldbiz.com",split:"ud",where:"right"}
+,{domain:"m.hkbs.co.kr",split:"idxno",where:"right"}
+,{domain:"m.housingherald.co.kr",split:"idxno",where:"right"}
+,{domain:"m.ikoreadaily.co.kr",split:"idxno",where:"right"}
+,{domain:"m.inews24.com",split:"g_serial",where:"right"}
+,{domain:"m.jemin.com",split:"idxno",where:"right"}
+,{domain:"m.joongdo.co.kr",split:"key",where:"right"}
+,{domain:"m.joynews24.com",split:"g_serial",where:"right"}
+,{domain:"m.jumpball.co.kr",split:"no",where:"right"}
+,{domain:"m.khan.co.kr",split:"artid",where:"right"}
+,{domain:"m.kns.tv",split:"idxno",where:"right"}
+,{domain:"m.koreaherald.com",split:"ud",where:"right"}
+,{domain:"m.kpinews.co.kr",split:"idxno",where:"right"}
+,{domain:"m.ksilbo.co.kr",split:"idxno",where:"right"}
+,{domain:"m.ksmnews.co.kr",split:"idx",where:"right"}
+,{domain:"m.kyeongin.com",split:"key",where:"right"}
+,{domain:"m.lawissue.co.kr",split:"ud",where:"right"}
+,{domain:"m.mbn.co.kr",split:"news_seq_no",where:"right"}
+,{domain:"m.mdtoday.co.kr",split:"no",where:"right"}
+,{domain:"m.metroseoul.co.kr",split:"newscd",where:"right"}
+,{domain:"m.munhwa.com",split:"no",where:"right"}
+,{domain:"m.namdonews.com",split:"idxno",where:"right"}
+,{domain:"m.newdaily.co.kr",split:"id",where:"right"}
+,{domain:"m.newsfreezone.co.kr",split:"idxno",where:"right"}
+,{domain:"m.newspim.com",split:"?",where:"left"}
+,{domain:"m.newsworker.co.kr",split:"idxno",where:"right"}
+,{domain:"m.nextdaily.co.kr",split:"id",where:"right"}
+,{domain:"m.nocutnews.co.kr",split:"?",where:"left"}
+,{domain:"m.obs.co.kr",split:"id",where:"right"}
+,{domain:"m.seconomy.kr",split:"ud",where:"right"}
+,{domain:"m.shinmoongo.net",split:"?",where:"left"}
+,{domain:"m.shinmoongo.net",split:"uid",where:"right"}
+,{domain:"m.siminilbo.co.kr",split:"idxno",where:"right"}
+,{domain:"m.sisamagazine.co.kr",split:"idxno",where:"right"}
+,{domain:"m.slist.kr",split:"idxno",where:"right"}
+,{domain:"m.spoon.spotvnews.co.kr",split:"idxno",where:"right"}
+,{domain:"m.sporbiz.co.kr",split:"idxno",where:"right"}
+,{domain:"m.sports.khan.co.kr",split:"artid",where:"right"}
+,{domain:"m.sportsq.co.kr",split:"idxno",where:"right"}
+,{domain:"m.sportsseoul.com",split:"?",where:"left"}
+,{domain:"m.sportsworldi.com",split:"?",where:"left"}
+,{domain:"m.spotvnews.co.kr",split:"idxno",where:"right"}
+,{domain:"m.techholic.co.kr",split:"idxno",where:"right"}
+,{domain:"m.thebigdata.co.kr",split:"ud",where:"right"}
+,{domain:"m.theceluv.com",split:"aid",where:"right"}
+,{domain:"m.thegolftimes.co.kr",split:"idxno",where:"right"}
+,{domain:"m.tourtimes.net",split:"uid",where:"right"}
+,{domain:"m.updownnews.co.kr",split:"idxno",where:"right"}
+,{domain:"m.viva100.com",split:"key",where:"right"}
+,{domain:"m.webdaily.co.kr",split:"ud",where:"right"}
+,{domain:"m.wikitree.co.kr",split:"id",where:"right"}
+,{domain:"m.wowtv.co.kr",split:"artid",where:"right"}
+,{domain:"m.xportsnews.com",split:"entry_id",where:"right"}
+,{domain:"m.youngnong.co.kr",split:"idxno",where:"right"}
+,{domain:"m.youthdaily.co.kr",split:"idxno",where:"right"}
+,{domain:"m.zdnet.co.kr",split:"artice_id",where:"right"}
+,{domain:"mbiz.heraldcorp.com",split:"ud",where:"right"}
+,{domain:"mbn.mk.co.kr",split:"news_seq_no",where:"right"}
+,{domain:"mediaus.co.kr",split:"idxno",where:"right"}
+,{domain:"mengnews.joins.com",split:"aid",where:"right"}
+,{domain:"mleaders.asiae.co.kr",split:"idxno",where:"right"}
+,{domain:"mnm.seoul.co.kr",split:"id",where:"right"}
+,{domain:"mobile.newsis.com",split:"id",where:"right"}
+,{domain:"mosen.mt.co.kr",split:"?",where:"left"}
+,{domain:"mpop.heraldcorp.com",split:"ud",where:"right"}
+,{domain:"mrealfoods.heraldcorp.com",split:"ud",where:"right"}
+,{domain:"mstoo.asiae.co.kr",split:"no",where:"right"}
+,{domain:"mtvdaily.asiae.co.kr",split:"aid",where:"right"}
+,{domain:"new.asiatoday.co.kr",split:"key",where:"right"}
+,{domain:"newm.wowtv.co.kr",split:"articleId",where:"right"}
+,{domain:"news.chosun.com",split:"?",where:"left"}
+,{domain:"news.g-enews.com",split:"ud",where:"right"}
+,{domain:"news1.kr",split:"&",where:"left"}
+,{domain:"news20.busan.com",split:"newsId",where:"right"}
+,{domain:"newsfocus.co.kr",split:"uid",where:"right"}
+,{domain:"nscreen.neoebiz.co.kr",split:"pid",where:"right"}	
+,{domain:"entertainps.com",split:"?",where:"left"}
+,{domain:"soda.donga.com",split:"?",where:"left"}
+,{domain:"www.asiae.co.kr",split:"idxno",where:"right"}
+,{domain:"cm.asiae.co.kr",split:"no",where:"right"}
+,{domain:"m.anewsa.com",split:"number",where:"right"}
+,{domain:"www.sisunnews.co.kr",split:"idxno",where:"right"}
+,{domain:"speconomy.com",split:"idxno",where:"right"}
+,{domain:"www.sporbiz.co.kr",split:"idxno",where:"right"}
+,{domain:"gamefocus.co.kr",split:"number",where:"right"}
+,{domain:"www.ichannela.com",split:"publishId",where:"right"}
+,{domain:"cmobile.g-enews.com",split:"ud",where:"right"}
+,{domain:"khnews.kheraldm.com",split:"ud",where:"right"}
+,{domain:"www.seoulwire.com",split:"idxno",where:"right"}
+,{domain:"cmobile.g-enews.com",split:"ud",where:"right"}
+,{domain:"famtimes.co.kr",split:"?",where:"left"}
+,{domain:"m.newsinside.kr",split:"idxno",where:"right"}
+,{domain:"m.polinews.co.kr",split:"no",where:"right"}
+,{domain:"polinews.co.kr",split:"no",where:"right"}
+,{domain:"www.dtnews24.com",split:"idxno",where:"right"}
+,{domain:"sports.donga.com",split:"gid",where:"right"}
+,{domain:"sports.mk.co.kr",split:"no",where:"right"}
+,{domain:"isplus.live.joins.com",split:"total_id",where:"right"}
+,{domain:"www.nocutnews.co.kr",split:"?",where:"left"}
+,{domain:"m.kmib.co.kr",split:"arcid",where:"right"}
+,{domain:"m.econovill.com",split:"idxno",where:"right"}
+,{domain:"m.iusm.co.kr",split:"idxno",where:"right"}
+,{domain:"www.greenpostkorea.co.kr",split:"idxno",where:"right"}
+,{domain:"www.ilyosisa.co.kr",split:"idxno",where:"right"}
+,{domain:"www.koreaherald.com",split:"ud",where:"right"}
+,{domain:"www.speconomy.com",split:"idxno",where:"right"}
+,{domain:"worldps.co.kr",split:"?",where:"left"}
+,{domain:"www.ggilbo.com",split:"idxno",where:"right"}
+,{domain:"www.munhwa.com",split:"no",where:"right"}
+,{domain:"www.newscj.com",split:"idxno",where:"right"}
+,{domain:"www.ujeil.com",split:"idxno",where:"right"}
+,{domain:"m.isplus.joins.com",split:"total_id",where:"right"}
+,{domain:"m.newsen.com",split:"uid",where:"right"}
+,{domain:"www.cine21.com",split:"mag_id",where:"right"}
+,{domain:"www.drspark.net",split:"document_srl",where:"right"}
+,{domain:"www.headlinejeju.co.kr",split:"idxno",where:"right"}
+,{domain:"www.nbnnews.co.kr",split:"idxno",where:"right"}
+,{domain:"www.slist.kr",split:"idxno",where:"right"}
+,{domain:"allvod.sbs.co.kr",split:"srs_id",where:"right"}
+,{domain:"hooc.heraldcorp.com",split:"ud",where:"right"}
+,{domain:"m.dailycar.co.kr",split:"autoId",where:"right"}
+,{domain:"m.dtoday.co.kr",split:"idxno",where:"right"}
+,{domain:"m.kado.net",split:"idxno",where:"right"}
+,{domain:"m.knnews.co.kr",split:"idxno",where:"right"}
+,{domain:"m.star.mt.co.kr",split:"no",where:"right"}
+,{domain:"m.wowtv.co.kr",split:"articleId",where:"right"}
+,{domain:"mnc.asiae.co.kr",split:"idxno",where:"right"}
+,{domain:"mnews.jtbc.joins.com",split:"news_id",where:"right"}
+,{domain:"view.asiae.co.kr",split:"idxno",where:"right"}
+,{domain:"weekly.khan.co.kr",split:"art_id",where:"right"}
+,{domain:"www.anewsa.com",split:"number",where:"right"}
+,{domain:"www.cctimes.kr",split:"#",where:"left"}
+,{domain:"www.gwangnam.co.kr",split:"aid",where:"right"}
+,{domain:"www.joongboo.com",split:"idxno",where:"right"}
+,{domain:"www.kgnews.co.kr",split:"idxno",where:"right"}
+,{domain:"www.kihoilbo.co.kr",split:"idxno",where:"right"}
+,{domain:"www.kyongbuk.co.kr",split:"idxno",where:"right"}
+,{domain:"www.seoulilbo.com",split:"idxno",where:"right"}
+,{domain:"www.sjbnews.com",split:"idxno",where:"right"}
+,{domain:"www.travelnbike.com",split:"idxno",where:"right"}
+,{domain:"www.ujnews.co.kr",split:"idxno",where:"right"}
+,{domain:"www.xportsnews.com",split:"entry_id",where:"right"}
+,{domain:"www.incheonilbo.com",split:"idxno",where:"right"}
+,{domain:"www.intn.co.kr",split:"idxno",where:"right"}
+,{domain:"www.kado.net",split:"idxno",where:"right"}
+,{domain:"www.kgdm.co.kr",split:"idxno",where:"right"}
+,{domain:"www.kjtimes.net",split:"idxno",where:"right"}
+,{domain:"www.kookje.co.kr",split:"key",where:"right"}
+,{domain:"www.ksmnews.co.kr",split:"idx",where:"right"}
+,{domain:"www.polinews.co.kr",split:"no",where:"right"}
+,{domain:"www.sisamagazine.co.kr",split:"idxno",where:"right"}
+,{domain:"www.songpatimes.com",split:"idxno",where:"right"}
+,{domain:"www.todayenergy.kr",split:"idxno",where:"right"}
+,{domain:"www.topdaily.kr",split:"idxno",where:"right"}
+,{domain:"www.upkorea.net",split:"idxno",where:"right"}
+,{domain:"www.urinews.co.kr",split:"uid",where:"right"}
+,{domain:"www.wonjutoday.co.kr",split:"idxno",where:"right"}
+,{domain:"cm.thebigdata.co.kr",split:"ud",where:"right"}
+,{domain:"linejournal.net",split:"wr_id",where:"right"}
+,{domain:"mnews.imaeil.com",split:"?",where:"left"}
+,{domain:"www.ccdn.co.kr",split:"idxno",where:"right"}
+,{domain:"www.chookjenews.kr",split:"idxno",where:"right"}
+,{domain:"www.joongdo.co.kr",split:"key",where:"right"}
+,{domain:"www.ksilbo.co.kr",split:"idxno",where:"right"}
+,{domain:"www.ksngn.net",split:"idxno",where:"right"}
+,{domain:"www.newspim.com",split:"?",where:"left"}
+,{domain:"app.ytn.co.kr",split:"key",where:"right"}
+,{domain:"okfashion.co.kr",split:"number",where:"right"}
+,{domain:"pop.heraldcorp.com",split:"ud",where:"right"}
+,{domain:"theleader.mt.co.kr",split:"no",where:"right"}
+,{domain:"tvdaily.asiae.co.kr",split:"aid",where:"right"}
+,{domain:"news.kmib.co.kr",split:"arcid",where:"right"}
+,{domain:"egreennews.com",split:"ud",where:"right"}
+,{domain:"m.asiae.co.kr",split:"no",where:"right"}
+,{domain:"www.newsrep.co.kr",split:"idxno",where:"right"}
+,{domain:"m.kbench.com",split:"&",where:"left"}
+,{domain:"biztribune.co.kr",split:"no",where:"right"}
+,{domain:"cm.marketnews.co.kr",split:"ud",where:"right"}
+,{domain:"daily.hankooki.com",split:"?",where:"left"}
+,{domain:"globaleconomic.co.kr",split:"ud",where:"right"}
+,{domain:"lady.khan.co.kr",split:"artid",where:"right"}
+,{domain:"m.bluekoreadot.com",split:"idxno",where:"right"}
+,{domain:"m.chookjenews.kr",split:"idxno",where:"right"}
+,{domain:"www.osen.co.kr",split:"?",where:"left"}
+,{domain:"tenasia.hankyung.com",split:"?",where:"left"}
+,{domain:"www.basketkorea.com",split:"idxno",where:"right"}
+,{domain:"www.biztribune.co.kr",split:"no",where:"right"}
+,{domain:"www.dailygrid.net",split:"idxno",where:"right"}
+,{domain:"www.dhns.co.kr",split:"idxno",where:"right"}
+,{domain:"www.domin.co.kr",split:"idxno",where:"right"}
+,{domain:"www.newspic.kr",split:"nid",where:"right"}
+];
+var foin_Base64 = {
+			// private property
+			_keyStr : "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
+		  // public method for encoding
+		 	encode : function (input) 
+		 	{
+			  var output = "";
+			  var chr1, chr2, chr3, enc1, enc2, enc3, enc4;
+			  var i = 0;
+			  input = foin_Base64._utf8_encode(input);
+
+			  while (i < input.length) {
+
+				  chr1 = input.charCodeAt(i++);
+				  chr2 = input.charCodeAt(i++);
+				  chr3 = input.charCodeAt(i++);
+
+				  enc1 = chr1 >> 2;
+				  enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
+				  enc3 = ((chr2 & 15) << 2) | (chr3 >> 6);
+				  enc4 = chr3 & 63;
+
+				  if (isNaN(chr2)) {
+					  enc3 = enc4 = 64;
+				  } else if (isNaN(chr3)) {
+					  enc4 = 64;
+				  }
+
+				  output = output +
+					  this._keyStr.charAt(enc1) + this._keyStr.charAt(enc2) +
+					  this._keyStr.charAt(enc3) + this._keyStr.charAt(enc4);
+
+			  }
+
+			  return output;
+		 	},
+		 	// private method for UTF-8 encoding
+			_utf8_encode : function (string) 
+			{
+				   string = string.replace(/\r\n/g,"\n");
+				   var utftext = "";
+				   for (var n = 0; n < string.length; n++) 
+				   {
+					   var c = string.charCodeAt(n);
+					   if (c < 128) {
+						   utftext += String.fromCharCode(c);
+					   }
+					   else if((c > 127) && (c < 2048)) {
+						   utftext += String.fromCharCode((c >> 6) | 192);
+						   utftext += String.fromCharCode((c & 63) | 128);
+					   }
+					   else {
+						   utftext += String.fromCharCode((c >> 12) | 224);
+						   utftext += String.fromCharCode(((c >> 6) & 63) | 128);
+						   utftext += String.fromCharCode((c & 63) | 128);
+					   }
+				   }
+				   return utftext;
+			}
+};
+
+/* 포인정보 모듈 */
+(function () {
+		/*이미 존재하는지 확인 */
+    if (typeof(window.foin_cookie) != 'undefined') return;
+    foin_cookie = new Object();
+
+    foin_cookie.obj = function (set) {
+        this.setting = set;
+    };
+
+		/**************************************************************************/
+		/***  Utility                                                          ****/
+		/**************************************************************************/
+		foin_cookie.obj.prototype.urlCut = function(cutInfo,url)
+		{
+			if(url==null || url.length<1 || cutInfo==null || cutInfo.length<1) return url;
+			try
+			{
+				for(var l_posi=0;l_posi<cutInfo.length;l_posi++)
+				{
+					if(url.indexOf(cutInfo[l_posi].domain)<0) continue;
+					if(cutInfo[l_posi].where=="right")
+					{
+						var l_idx=url.indexOf(cutInfo[l_posi].split+"=");
+						if(l_idx>=0)
+						{
+							l_idx = url.indexOf("&",l_idx);
+							if(l_idx>=0) url = url.substring(0,l_idx);
+						}					
+					}
+					else
+					{
+						var l_idx=url.indexOf(cutInfo[l_posi].split);
+						if(l_idx>=0)
+						{
+							url = url.substring(0,l_idx);
+						}					
+					}
+				}
+			}
+			catch(e)
+			{
+				console.log('urlCut error : '+e.message);
+			}
+			return url;
+		};
+		
+		foin_cookie.obj.prototype.getParam = function(url,name)
+		{
+			var rtnval="";
+			try
+			{
+			  var parameters = new Array();
+			  parameters = (url.slice(url.indexOf("?")+1, url.length)).split("&");
+			  for( var i = 0 ; i < parameters.length ; i++ ) 
+			  {
+			    if(parameters[i].indexOf(name) == 0) 
+			    {
+			      var l_item=parameters[i].split("=");
+			      if(l_item==null || l_item.length!=2) continue;
+			      l_item[0] = l_item[0].replace(/^\s+|\s+$/g,"");
+			      if(l_item[0]==name)
+			      {
+			      	rtnval = l_item[1];
+			      	break;
+			      }
+			    }
+			  }
+			}
+			catch(e)
+			{
+				rtnval = "";
+			}
+			return rtnval;
+		};
+
+		foin_cookie.obj.prototype.getUrl = function(url)
+		{
+			var rtnVal="";
+			try
+			{
+				url = url.replace(/\\/gi, '/');
+				var begin = url.indexOf("//");
+				if(begin<0) begin = 0;
+				else begin+=2;
+				var end = url.indexOf("/",begin);
+				if(end<0) end = url.indexOf("?",begin);
+				if(end<0) end=url.length;
+				rtnVal=url.substring(begin,end);			
+				rtnVal=rtnVal.toLowerCase();	
+				if(rtnVal.indexOf(".")<0) rtnVal="";
+			}
+			catch(e)
+			{
+				rtnVal = "";
+			}
+			return rtnVal;
+		};
+		/**************************************************************************/
+		/***  html 5                                                           ****/
+		/**************************************************************************/
+    foin_cookie.obj.prototype.isHtml5 = function () 
+    {
+			var rtnVal=false;
+			try
+			{
+				if (typeof(Storage) != "undefined") 
+				{
+				  rtnVal=true;
+				} 
+				else 
+				{
+					rtnVal=false;
+				}				
+			}
+			catch(e)
+			{
+				console.log('isHtml5 error : '+e.message);
+				rtnVal=false;
+			}
+      return rtnVal;
+    };
+
+    foin_cookie.obj.prototype.setHtml5 = function (key,val) 
+    {
+    	var rtnVal=false;
+			try
+			{
+				if(typeof(key)=='undefined' || key.length<1) 
+				{
+					rtnVal=false;
+				}
+				else
+				{
+					localStorage.setItem(key,val);
+					rtnVal=true;
+				}
+			}
+			catch(e)
+			{
+				rtnVal=false;
+				console.log('setHtml5 error : '+e.message);
+			}
+			return rtnVal;
+    };
+
+    foin_cookie.obj.prototype.getHtml5 = function (key) 
+    {
+    	var rtnVal=null;
+    	
+			try
+			{
+				if(typeof(key)=='undefined' || key.length<1) 
+				{
+					rtnVal=null;
+				}
+				else
+				{
+					rtnVal = localStorage.getItem(key);
+				}
+			}
+			catch(e)
+			{
+				rtnVal=null;
+				console.log('getHtml5 error : '+e.message);
+			}
+			return rtnVal;
+    };
+
+    foin_cookie.obj.prototype.removeHtml5 = function (key) 
+    {
+    	var rtnVal=false;
+    	
+			try
+			{
+				if(typeof(key)=='undefined' || key.length<1) 
+				{
+					rtnVal=false;
+				}
+				else
+				{
+					localStorage.removeItem(key);
+					rtnVal=true;
+				}
+			}
+			catch(e)
+			{
+				rtnVal=false;
+				console.log('clearHtml5 error : '+e.message);
+			}
+			return rtnVal;
+    };
+
+		/**************************************************************************/
+		/***  Cookie                                                           ****/
+		/**************************************************************************/
+    foin_cookie.obj.prototype.setCookie = function (key,val,exdays) 
+    {
+    	var rtnVal=false;
+    	if(typeof(key)=='undefined' || key.length<1) return false;
+    	if(typeof(exdays)=='undefined' || exdays.length<1) exdays=365;
+    	
+			try
+			{
+	  		var d = new Date();
+    		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    		var expires = "expires="+ d.toUTCString();
+    		document.cookie = key + "=" + val + "; " + expires+"; path=/";
+    		rtnVal=true;
+			}
+			catch(e)
+			{
+				rtnVal=false;
+				console.log('setCookie error : '+e.message);
+			}
+			return rtnVal;
+    };
+
+    foin_cookie.obj.prototype.getCookie = function (key) 
+    {
+    	var rtnVal=null;
+    	if(typeof(key)=='undefined' || key.length<1) return null;
+			try
+			{
+				var name = key + "=";
+		    var ca = document.cookie.split(';');
+		    for(var i = 0; rtnVal==null && i <ca.length; i++) 
+		    {
+		      var c = ca[i];
+		      while (c.charAt(0)==' ') 
+		      {
+		      	c = c.substring(1);
+		      }
+		      if (c.indexOf(name) == 0) 
+		      {
+		        rtnVal = c.substring(name.length,c.length);
+		        break;
+		      }
+		    }
+		    return rtnVal;
+			}
+			catch(e)
+			{
+				rtnVal=null;
+				console.log('getCookie error : '+e.message);
+			}
+			return rtnVal;
+    };
+    
+    foin_cookie.obj.prototype.removeCookie = function (key) 
+    {
+    	var rtnVal=false;
+    	var val="empty";
+    	if(typeof(key)=='undefined' || key.length<1) return false;
+			try
+			{
+	  		var d = new Date();
+    		d.setTime(d.getTime() - 1000);
+    		var expires = "expires="+ d.toUTCString();
+    		document.cookie = key + "=" + val + "; " + expires;
+    		rtnVal=true;
+			}
+			catch(e)
+			{
+				rtnVal=false;
+				console.log('removeCookie error : '+e.message);
+			}
+			return rtnVal;
+    };
+    
+		/**************************************************************************/
+		/***  Keyword Procedure                                                ****/
+		/**************************************************************************/
+    foin_cookie.obj.prototype.getKeyword = function () 
+    {
+    	var rtnVal={"inflow":"","keyword":""};
+			try
+			{
+				var preUrl=document.referrer;
+				var l_domain = foinCookie.getUrl(preUrl);
+				if(l_domain.indexOf("naver.com")>=0) 
+				{
+					rtnVal.inflow="naver";
+					rtnVal.keyword=foinCookie.getParam(preUrl,"query");
+				}
+				else if(l_domain.indexOf("daum.net")>=0) 
+				{
+					rtnVal.inflow="daum";
+					rtnVal.keyword=foinCookie.getParam(preUrl,"q");
+				}
+				if(rtnVal.keyword.length>0)
+				{
+					rtnVal.keyword=rtnVal.keyword.replace(/,/g,"");
+					rtnVal.keyword=decodeURIComponent(rtnVal.keyword);
+				}
+			}
+			catch(e)
+			{
+				rtnVal={"inflow":"","keyword":""};				
+				console.log('getKeyword error : '+e.message);
+			}
+			return rtnVal;
+    };
+
+    foin_cookie.obj.prototype.setKeyword_local = function (rtnInfo) 
+    {
+    	var rtnVal=false;
+    	try
+    	{
+				if(typeof(this.setting.live_keyword)=='undefined') this.setting.live_keyword="";
+				if(this.setting.live_keyword==rtnInfo) return true;	
+				this.setting.live_keyword=rtnInfo;
+  			if(foinCookie.isHtml5()==true)
+  			{
+  				foinCookie.setHtml5("FOIN_KEYWORD",rtnInfo);
+  			}
+ 				foinCookie.setCookie("FOIN_KEYWORD1",rtnInfo,30);
+			}
+			catch(e)
+			{
+				rtnVal=false;
+				console.log('setKeyword_local error : '+e.message);
+			}
+			return rtnVal;
+    };
+
+    foin_cookie.obj.prototype.setKeyword_global = function (keyword)
+    {
+    	var rtnVal=false;
+    	if(typeof(keyword)=='undefined' || keyword==null || keyword.length<1) return;
+			var setting=this.setting;
+    	try
+    	{
+    		var l_date = new Date();
+				var l_url=setting.refServerUrl+"?servicename=KEYWORD&keyword="+keyword+"&tm="+l_date.getTime()+"&jquerycallback=foinCookie.setKeyword_local";
+		    var l_Head = document.getElementsByTagName('HEAD')[0];
+		    if(typeof(l_Head)=='undefined') l_Head = document.getElementsByTagName('BODY')[0];
+		    var scrObj=document.createElement('SCRIPT');
+		    scrObj.type = 'text/javascript';
+				scrObj.async = true;
+				scrObj.defer = true;
+				scrObj.src = l_url;
+				l_Head.appendChild(scrObj);  		
+				rtnVal=true;
+			}
+			catch(e)
+			{
+				rtnVal=false;
+				console.log('setKeyword_global error : '+e.message);
+			}
+			return rtnVal;
+    };
+
+		/**************************************************************************/
+		/***  Referer  Procedure                                              ****/
+		/**************************************************************************/
+    foin_cookie.obj.prototype.getRefer = function () 
+    {
+    	var rtnVal=null;
+			try
+			{
+				var nowUrl=location.href;
+				var preUrl=document.referrer;
+				/* 만약 무조건 ref 값으로 하라고 되어 있는 도메인이 있다면... */
+				if(typeof(foin_where_ref)!="undefined" && foin_where_ref.length!=null)
+				{
+					var l_host = foinCookie.getUrl(nowUrl);
+					if(l_host!=null && l_host.length>0)
+					{
+						for(var i=0;i<foin_where_ref.length;i++)
+						{
+							if(foin_where_ref[i]==l_host)
+							{
+								nowUrl = preUrl;
+								break;
+							}
+						}
+					}
+				}
+				/* 현재의 URL을 사용할지 여부 */
+				if( !( nowUrl.indexOf("cgi-bin")>=0
+			     || nowUrl.indexOf("//ad.")>=0
+			     || nowUrl.indexOf("compass.adop.cc")>=0
+			     || nowUrl.indexOf("adex.adux.kr")>=0
+			     || nowUrl.indexOf("RealMedia")>=0
+			     || nowUrl.indexOf("mtab.clickmon.co.kr")>=0
+			     || nowUrl.indexOf(".mrep.kr")>=0
+			     || nowUrl.indexOf("adx-exchange")>=0
+			     || nowUrl.indexOf("ad89")>=0
+			     || nowUrl.indexOf("//adex.")>=0
+			     || nowUrl.indexOf(".linkprice.")>=0
+			     || nowUrl.indexOf("img.")>=0
+			     || nowUrl.indexOf("a.wyzmob.com")>=0
+			     || nowUrl.indexOf("ad4989")>=0
+				))
+				{
+					preUrl = nowUrl;
+				}
+				/* REFFER 이 광고 시스템 호출 URL이면 무시함 */
+				if(preUrl.indexOf("cgi-bin")>=0)
+				{
+					preUrl = "";
+				}
+				if(typeof(preUrl)=='undefined' || preUrl==null || preUrl.length<1)
+				{
+					rtnVal=null;						
+				}
+				else
+				{
+					preUrl = foinCookie.urlCut(foin_domainCutInfo, preUrl);
+					if(preUrl.indexOf("#")>=0) preUrl=preUrl.substring(0,preUrl.indexOf("#"));
+					rtnVal=preUrl;
+				}
+			}
+			catch(e)
+			{
+				rtnVal=null;
+				console.log('getRefer error : '+e.message);
+			}
+			return rtnVal;
+    };
+    
+    foin_cookie.obj.prototype.setReferrer_local = function (rtnInfo) 
+    {
+    	try
+    	{
+				if(typeof(this.setting.live_ref)=='undefined') this.setting.live_ref="";
+				if(this.setting.live_ref==rtnInfo) return ;	
+				this.setting.live_ref=rtnInfo;
+  			if(foinCookie.isHtml5()==true)
+  			{
+  				foinCookie.setHtml5("FOIN_CATEGORY",rtnInfo);
+  			}
+ 				foinCookie.setCookie("FOIN_CATEGORY1",rtnInfo,30);
+    	}
+    	catch(e)
+    	{
+				console.log('setReferrer_local error : '+e.message);
+    	}
+    	return;
+		};
+
+    foin_cookie.obj.prototype.setReferrer_global = function (ref,title,summary,lang) 
+    {
+    	if(typeof(ref)=='undefined' || ref==null || ref.length<1) return;
+    	if(typeof(title)=='undefined' || title==null) title="";
+    	if(typeof(summary)=='undefined' || summary==null) summary="";
+    	if(typeof(lang)=='undefined' || lang==null) lang="";
+			var setting=this.setting;
+    	try
+    	{
+    		var l_date = new Date();
+    		var l_cookieVal = foinCookie.getHtml5("FOIN_CATEGORY");
+    		if(l_cookieVal==null) l_cookieVal ="";
+    		var l_url=setting.refServerUrl+"?servicename=REF&ref="+ref+"&title="+title+"&summary="+summary+"&lang="+lang+"&cookieval="+l_cookieVal+"&tm="+l_date.getTime()+"&jquerycallback=foinCookie.setReferrer_local";
+		    var l_Head = document.getElementsByTagName('HEAD')[0];
+		    if(typeof(l_Head)=='undefined') l_Head = document.getElementsByTagName('BODY')[0];
+		    var scrObj=document.createElement('SCRIPT');
+		    scrObj.type = 'text/javascript';
+				scrObj.async = true;
+				scrObj.defer = true;
+				scrObj.src = l_url;
+				l_Head.appendChild(scrObj);  		
+			}
+			catch(e)
+			{
+				console.log('setReferrer_global error : '+e.message);
+			}
+		};
+
+})();
+
+
+try
+{
+	if(typeof(foin_cookie_setting)!='undefined' && foin_cookie_setting.slotNum!='undefined' && foin_cookie_setting.slotNum.length<1)
+	{
+		var l_protocol = location.protocol.toLowerCase();
+		
+		var l3_date = new Date();
+		
+		if((l3_date.getTime() % 100)>=0)
+		{
+			window.foinCookie = new foin_cookie.obj(foin_cookie_setting);
+			/* title, summary */
+			var Title = "";
+			var Summary = "";
+			var Lang = "utf-8";
+			/* keyword*/
+			var keywordInfo = foinCookie.getKeyword();
+			if(keywordInfo!=null || keywordInfo.keyword!=null && keywordInfo.keyword.length>0)
+			{
+				keywordInfo.keyword=foin_Base64.encode(keywordInfo.keyword);
+			}
+			/* referrer*/
+			var refVal=foinCookie.getRefer();
+			var usedRef = false;
+			if(refVal!=null && refVal.length>0)
+			{
+				var old_refVal = foinCookie.getHtml5("FOIN_REF");
+				if(refVal == old_refVal) usedRef = true;
+				
+				/* foinCookie.setCookie("FOIN_REF1",refVal,3); */
+				if(usedRef==false)
+				{
+					if(foinCookie.isHtml5()==true) foinCookie.setHtml5("FOIN_REF",refVal);
+					refVal=foin_Base64.encode(refVal);
+				}
+			}
+			/* data send */
+			/* if(usedRef==false) */
+			{
+	    	try
+	    	{
+	    		var l_userAgent = window.navigator.userAgent;
+	    		l_userAgent=l_userAgent.toLowerCase();
+					var l_isChrome = l_userAgent.indexOf("chrome/");
+					var l_ver = 0.0; 
+					if(l_isChrome>=0)
+					{
+						l_isChrome = l_isChrome+7;
+						var l_end = l_userAgent.indexOf(".",l_isChrome);
+						if(l_end<0) l_end = l_userAgent.indexOf(" ",l_isChrome);
+						if(l_end<0) l_end = l_userAgent.indexOf(";",l_isChrome);
+						try
+						{
+							if(l_end>0) l_ver = Number(l_userAgent.substring(l_isChrome,l_end));
+							else l_ver = Number(l_userAgent.substring(l_isChrome,l_userAgent.length));
+						}
+						catch(e2)
+						{
+							console.log(l_userAgent);
+							console.log('setReferrer_global error : '+e2.message);
+						}
+					}	
+
+	    		var l_date = new Date();
+	    		var l_url="";
+	    		if(l_ver>=80 && foin_cookie_setting.refServerUrl.toLowerCase().indexOf("https:")<0) l_url+="https:";
+	    		l_url = l_url + foin_cookie_setting.refServerUrl+"?servicename=CONF&keyword="+keywordInfo.keyword+"&ref="+refVal+"&inflow="+keywordInfo.inflow+"&adurl="+foin_cookie_setting.adServerUrl+"&lang="+Lang+"&tm="+l_date.getTime();
+	    		var l_Body = document.getElementsByTagName('BODY')[0];
+			    var l_divObj=document.createElement('DIV');
+	        var l_style = {position:"absolute", left:"0px", top:"0px", width:"0px", height:"0px", margin:"0px", padding:"0px", border:"none", overflow:"hidden"};
+	        for(var key in l_style){
+	        	l_divObj.style[key] = l_style[key];
+	        }
+					l_Body.appendChild(l_divObj);  		
+			    var l_scrObj=document.createElement('IFRAME');
+			    l_scrObj.src = l_url;
+					l_scrObj.width = "0";
+					l_scrObj.height = "0";
+					l_scrObj.allowTransparency = "true";
+					l_scrObj.marginwidth = "0";
+					l_scrObj.marginheight = "0";
+					l_scrObj.hspace = "0";
+					l_scrObj.vspace = "0";
+					l_scrObj.frameborder = "0";
+					l_scrObj.scrolling = "no";
+	        l_style = {width:"0px", height:"0px", margin:"0px", padding:"0px", border:"none"};
+	        for(var key in l_style){
+	        	l_scrObj.style[key] = l_style[key];
+	        }
+					l_divObj.appendChild(l_scrObj);  		
+				}
+				catch(e)
+				{
+					console.log('setReferrer_global error : '+e.message);
+				}
+			}	
+		}
+	}
+}
+catch(e)
+{
+	console.log(e.message);
+};	

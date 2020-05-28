@@ -1,0 +1,10 @@
+$(document).ready(function(){
+	 $("a").each(function(){
+		var a_href = "";
+		var p = /\/\.\/adclick/;
+		if(  $(this).attr("href").match(p)  ){
+		  a_href = $(this).attr("href").replace("/./adclick" , "/adclick");
+		  $(this).attr("href", a_href);
+		}
+	});
+});
